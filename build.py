@@ -83,6 +83,13 @@ def page(slug, fm, body):
     if (ROOT/"covers"/f"{slug}.webp").exists():
         fig = f'<figure class="cover"><img src="covers/{slug}.webp" alt="" loading="eager" width="1200" height="658"></figure>'
         body = re.sub(r'(class="lede"[^>]*>.*?</p>\s*</div>)', lambda m: m.group(1)+"\n"+fig, body, count=1, flags=re.S)
+    # make the Key insights box collapsible (title visible, bullets behind an Expand toggle)
+    body = re.sub(
+        r'<div class="insights">\s*<div class="kicker">(.*?)</div>\s*(<ul>.*?</ul>)\s*</div>',
+        lambda m: ('<div class="insights"><div class="ins-h">'+m.group(1)+'</div>'
+                   '<details class="ins-d"><summary><span class="s-c">Expand key insights</span>'
+                   '<span class="s-o">Hide key insights</span></summary>'+m.group(2)+'</details></div>'),
+        body, count=1, flags=re.S)
     html = f'''<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title} · Latomic</title>

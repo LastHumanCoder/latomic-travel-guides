@@ -229,6 +229,18 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
 /* ===== hero cover image ===== */
 .cover{margin:22px 0 6px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 50px rgba(23,20,43,.10);background:var(--paper)}
 .cover img{width:100%;height:auto;display:block}
+
+/* ===== collapsible key insights ===== */
+.insights .ins-h{display:flex;align-items:center;gap:9px;font-family:var(--fh);font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--ink);margin:0 0 14px}
+.insights .ins-h .ic{color:var(--coral);font-size:20px}
+.ins-d summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;border:1.5px solid var(--line2);border-radius:14px;font-weight:700;font-size:16px;color:var(--ink);transition:border-color .2s,background .2s}
+.ins-d summary:hover{border-color:var(--coral);background:var(--coral-50)}
+.ins-d summary::-webkit-details-marker{display:none}
+.ins-d summary::before{content:"\25B6";font-size:11px;color:var(--coral);transition:transform .25s}
+.ins-d[open] summary::before{transform:rotate(90deg)}
+.ins-d[open] summary{margin-bottom:8px}
+.ins-d .s-o{display:none}
+.ins-d[open] .s-c{display:none}.ins-d[open] .s-o{display:inline}
 </style></head><body>
 <header class="nav"><div class="nav-in">
 <a href="index.html" class="brand" aria-label="Latomic home">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic</a>
@@ -271,9 +283,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
     </div>
   </div>
 
-  <div class="insights">
-    <div class="kicker"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /> </svg>Key things to know</div>
-    <ul>
+  <div class="insights"><div class="ins-h"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /> </svg>Key things to know</div><details class="ins-d"><summary><span class="s-c">Expand key insights</span><span class="s-o">Hide key insights</span></summary><ul>
       <li><span class="n">1</span><span>Trip planning moved to AI fast. Phocuswright found <b>56% of travelers used AI for at least one trip</b> in the past year, so being absent from these answers costs real bookings. (<a class="inl" href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>)</span></li>
       <li><span class="n">2</span><span>If AI crawlers can't reach your pages, you can't be quoted. This is the most common and most missed cause of silence.</span></li>
       <li><span class="n">3</span><span>ChatGPT leans on <b>third-party reviews and directories</b> more than on your own site. In travel that means TripAdvisor and Google as much as your pages. (<a class="inl" href="https://www.steadydemand.com/?p=4927">Steady Demand</a>)</span></li>
@@ -281,8 +291,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
       <li><span class="n">5</span><span>Claiming a profile fixes your facts; it does not, by itself, make you appear more often.</span></li>
       <li><span class="n">6</span><span>Local recommendation habits are shifting quickly. BrightLocal found <b>45% of consumers used AI for local recommendations</b>, up from 6% a year earlier. (<a class="inl" href="https://www.brightlocal.com/research/local-consumer-review-survey/">BrightLocal</a>)</span></li>
       <li><span class="n">7</span><span>Answers vary by wording, city and sign-in, so one empty reply is never proof you're invisible.</span></li>
-    </ul>
-  </div>
+    </ul></details></div>
 
   <div class="stats">
     <div class="stat c"><b>56%</b><span>of travelers used AI for at least one trip in the past year (<a href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>)</span></div>

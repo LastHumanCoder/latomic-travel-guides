@@ -229,6 +229,18 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
 /* ===== hero cover image ===== */
 .cover{margin:22px 0 6px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 50px rgba(23,20,43,.10);background:var(--paper)}
 .cover img{width:100%;height:auto;display:block}
+
+/* ===== collapsible key insights ===== */
+.insights .ins-h{display:flex;align-items:center;gap:9px;font-family:var(--fh);font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--ink);margin:0 0 14px}
+.insights .ins-h .ic{color:var(--coral);font-size:20px}
+.ins-d summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;border:1.5px solid var(--line2);border-radius:14px;font-weight:700;font-size:16px;color:var(--ink);transition:border-color .2s,background .2s}
+.ins-d summary:hover{border-color:var(--coral);background:var(--coral-50)}
+.ins-d summary::-webkit-details-marker{display:none}
+.ins-d summary::before{content:"\25B6";font-size:11px;color:var(--coral);transition:transform .25s}
+.ins-d[open] summary::before{transform:rotate(90deg)}
+.ins-d[open] summary{margin-bottom:8px}
+.ins-d .s-o{display:none}
+.ins-d[open] .s-c{display:none}.ins-d[open] .s-o{display:inline}
 </style></head><body>
 <header class="nav"><div class="nav-in">
 <a href="index.html" class="brand" aria-label="Latomic home">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic</a>
@@ -271,9 +283,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
     </div>
   </div>
 
-  <div class="insights">
-    <div class="kicker"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /> </svg>Key things to know</div>
-    <ul>
+  <div class="insights"><div class="ins-h"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /> </svg>Key things to know</div><details class="ins-d"><summary><span class="s-c">Expand key insights</span><span class="s-o">Hide key insights</span></summary><ul>
       <li><span class="n">1</span><span>Claiming a listing is a real feature now, not a rumour. OpenAI set out how businesses appear and get verified when it <b>introduced businesses in ChatGPT</b>. (<a class="inl" href="https://openai.com/index/introducing-businesses-chatgpt/">OpenAI</a>)</span></li>
       <li><span class="n">2</span><span>The reach is the reason to bother. ChatGPT passed <b>900 million weekly users</b> by early 2026, so a verified travel listing sits in front of a very large audience. (<a class="inl" href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch</a>)</span></li>
       <li><span class="n">3</span><span>The Business Hub, where you claim and manage the listing, is built to serve roughly <b>1.2 billion weekly users</b> across ChatGPT. (<a class="inl" href="https://www.unite.ai/openai-launches-business-hub-and-business-agents-in-chatgpt/">Unite.ai</a>)</span></li>
@@ -281,8 +291,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
       <li><span class="n">5</span><span>Travel buyers are already here. Phocuswright found <b>56% of travelers used AI for at least one trip</b> in the past year, so the listing has demand waiting on it. (<a class="inl" href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>)</span></li>
       <li><span class="n">6</span><span>Local discovery moved fast: <b>45% of US consumers used AI for local recommendations</b>, up from 6% a year earlier. (<a class="inl" href="https://www.brightlocal.com/research/local-consumer-review-survey/">BrightLocal</a>)</span></li>
       <li><span class="n">7</span><span>The basic claim is free; a custom agentic sales rep is the paid add-on. (<a class="inl" href="https://venturebeat.com/technology/openai-lets-you-claim-your-business-in-chatgpt-and-set-up-a-custom-agentic-ai-customer-sales-rep">VentureBeat</a>)</span></li>
-    </ul>
-  </div>
+    </ul></details></div>
 
   <div class="stats">
     <div class="stat m"><b>900M</b><span>weekly ChatGPT users, Feb 2026 (<a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch</a>)</span></div>
