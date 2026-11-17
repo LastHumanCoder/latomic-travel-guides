@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFAF7;--ink:#17142B;--ink2:#4A4660;--ink3:#817C95;--coral:#FF5A3C;--coral9:#8A230F;--mint:#12B886;--line:rgba(23,20,43,.10);--fh:'Figtree',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{background:var(--bg);font-family:var(--fh);position:relative}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);pointer-events:none}
+.b1{width:420px;height:420px;background:#FFE0D2;top:-150px;right:-60px;opacity:.7}
+.b2{width:340px;height:340px;background:#D6F5EA;bottom:-150px;left:38%;opacity:.6}
+.b3{width:300px;height:300px;background:#FFE9C7;bottom:-120px;right:30%;opacity:.5}
+.wrap{position:relative;z-index:2;display:flex;height:100%}
+.left{width:600px;flex:none;padding:52px 24px 48px 64px;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;font-weight:800;font-size:30px;letter-spacing:-.04em;color:var(--ink)}
+.brand .o{width:.72em;height:.72em;margin:.08em .02em 0;overflow:visible}
+.brand .o circle.ring{fill:none;stroke:var(--ink);stroke-width:3.2}
+.brand .o .e circle{fill:var(--coral)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;margin-top:34px;font-size:13.5px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--coral9);background:#FFEDE8;border:1px solid #FBD9CE;padding:7px 14px;border-radius:999px}
+h1{margin-top:20px;font-weight:900;font-size:58px;line-height:1.02;letter-spacing:-.035em;color:var(--ink)}
+h1 .hl{color:var(--coral)}
+.sub{margin-top:18px;font-size:19px;font-weight:600;line-height:1.45;color:var(--ink2);max-width:490px}
+.foot{margin-top:auto;display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:700;color:var(--ink3)}
+.foot .dot{width:7px;height:7px;border-radius:50%;background:var(--coral)}
+.right{flex:1;position:relative}
+.illus{position:absolute;top:50%;left:8px;transform:translateY(-50%);width:532px;height:508px;border-radius:26px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 70px rgba(23,20,43,.16);background:#fff}
+.illus img{width:100%;height:100%;object-fit:cover;display:block}
+.chip{position:absolute;width:74px;height:74px;border-radius:20px;background:#fff;border:1px solid var(--line);box-shadow:0 14px 30px rgba(23,20,43,.14);display:grid;place-items:center;z-index:3}
+.chip img{width:40px;height:40px}
+.c1{top:10px;left:-30px}
+.c2{top:120px;right:14px}
+.c3{bottom:120px;right:14px}
+.c4{bottom:12px;left:-22px}
+</style></head>
+<body>
+<i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+<div class="wrap">
+  <div class="left">
+    <div class="brand">lat<svg class="o" viewBox="0 0 24 24"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2"/></g></svg>mic</div>
+    <span class="eyebrow">AI search · for travel agencies</span>
+    <h1 id="title"></h1>
+    <p class="sub" id="sub"></p>
+    <div class="foot"><span class="dot"></span><span>Latomic · the growth team for travel agencies</span></div>
+  </div>
+  <div class="right">
+    <div class="chip c1"><img src="shared/icons/openai.svg"></div>
+    <div class="chip c2"><img src="shared/icons/googlegemini.svg"></div>
+    <div class="chip c3"><img src="shared/icons/perplexity.svg"></div>
+    <div class="chip c4"><img src="shared/icons/claude.svg"></div>
+    <div class="illus"><img id="illus" src=""></div>
+  </div>
+</div>
+<script>
+const DATA={
+ "chatgpt-business-profile-for-travel-agencies":["Get set up in <span class='hl'>ChatGPT</span>","Done-for-you ChatGPT profile, website and SEO for travel agencies."],
+ "get-your-travel-agency-recommended-by-chatgpt":["Get recommended by <span class='hl'>ChatGPT</span>","The levers that put your agency in the answer travelers see."],
+ "why-isnt-my-travel-agency-showing-up-in-chatgpt":["Why aren't you in <span class='hl'>ChatGPT</span>?","Seven reasons travel agencies get skipped, and the fixes."],
+ "how-to-claim-your-travel-agency-in-chatgpt":["Claim your agency in <span class='hl'>ChatGPT</span>","Verify your Business Hub profile, step by step."],
+ "make-your-travel-website-visible-to-ai":["Make your site visible to <span class='hl'>AI</span>","Seven ways to get read by ChatGPT, Gemini and Perplexity."],
+ "chatgpt-business-listing-requirements-travel-agencies":["<span class='hl'>ChatGPT</span> listing requirements","Who can claim, how to verify, and what to prepare."],
+ "chatgpt-business-hub-for-travel-agencies":["Inside <span class='hl'>ChatGPT</span> Business Hub","What it does for travel agencies, and what it can't."],
+ "chatgpt-business-agent-for-travel-agencies":["<span class='hl'>ChatGPT</span> business agents","Who can use them, and what they do for travel."],
+ "chatgpt-vs-google-business-profile-travel-agencies":["<span class='hl'>ChatGPT</span> vs Google Profile","Which to claim first for a travel agency, and why."],
+ "will-ai-replace-travel-agents":["Will <span class='hl'>AI</span> replace travel agents?","An honest answer, and how to stay the one AI names."],
+ "does-chatgpt-recommend-hotels-and-travel-businesses":["Does <span class='hl'>ChatGPT</span> recommend hotels?","How AI picks travel businesses, and how to be picked."],
+ "how-to-get-travel-agency-leads-from-chatgpt-and-ai-search":["Get travel leads from <span class='hl'>AI search</span>","Turn ChatGPT answers into real enquiries."],
+};
+const slug=new URLSearchParams(location.search).get('slug');
+const d=DATA[slug]||["Latomic","The growth team for travel agencies."];
+document.getElementById('title').innerHTML=d[0];
+document.getElementById('sub').textContent=d[1];
+document.getElementById('illus').src='bg/'+slug+'.webp';
+</script>
+</body></html>
