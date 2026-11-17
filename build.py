@@ -10,7 +10,7 @@ GitHub Pages or opens straight from disk.
   python3 build.py            # build all
   python3 build.py <slug>     # build one
 """
-import re, sys, json, pathlib
+import re, sys, json, pathlib, shutil
 
 ROOT = pathlib.Path(__file__).resolve().parent
 SRC, DIST, ICONS = ROOT/"src", ROOT/"dist", ROOT/"shared"/"icons"
@@ -79,6 +79,10 @@ def frontmatter(raw):
 def page(slug, fm, body):
     title = fm.get("title", slug)
     desc = fm.get("desc", "")
+    # hero cover image under the title, if one exists for this slug
+    if (ROOT/"covers"/f"{slug}.webp").exists():
+        fig = f'<figure class="cover"><img src="covers/{slug}.webp" alt="" loading="eager" width="1200" height="658"></figure>'
+        body = re.sub(r'(class="lede"[^>]*>.*?</p>\s*</div>)', lambda m: m.group(1)+"\n"+fig, body, count=1, flags=re.S)
     html = f'''<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title} · Latomic</title>
@@ -113,7 +117,9 @@ def build_index():
              "why-isnt-my-travel-agency-showing-up-in-chatgpt","how-to-claim-your-travel-agency-in-chatgpt",
              "make-your-travel-website-visible-to-ai","chatgpt-business-listing-requirements-travel-agencies",
              "chatgpt-business-hub-for-travel-agencies","chatgpt-business-agent-for-travel-agencies",
-             "chatgpt-vs-google-business-profile-travel-agencies"]
+             "chatgpt-vs-google-business-profile-travel-agencies",
+             "does-chatgpt-recommend-hotels-and-travel-businesses","will-ai-replace-travel-agents",
+             "how-to-get-travel-agency-leads-from-chatgpt-and-ai-search"]
     by = {s: fm for s, fm in INDEX_CARDS}
     for s in order:
         if s not in by: continue
@@ -144,6 +150,8 @@ def build_index():
 
 def main(only):
     DIST.mkdir(exist_ok=True)
+    if (ROOT/"covers").exists():
+        shutil.copytree(ROOT/"covers", DIST/"covers", dirs_exist_ok=True)
     srcs = sorted(SRC.glob("*.html"))
     for p in srcs:
         if only and p.stem not in only: continue
