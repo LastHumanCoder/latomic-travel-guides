@@ -1,0 +1,366 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>7 Ways to Make Your Travel Agency Website Visible to AI (ChatGPT, Gemini, Perplexity) · Latomic</title>
+<meta name="description" content="A 2026 guide for travel agencies on making your website readable and citable by AI assistants: crawler access, plain-text facts, agent-friendly booking forms, real FAQs and checking results.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FBFAF7">
+<meta property="og:title" content="7 Ways to Make Your Travel Agency Website Visible to AI (ChatGPT, Gemini, Perplexity)"><meta property="og:description" content="A 2026 guide for travel agencies on making your website readable and citable by AI assistants: crawler access, plain-text facts, agent-friendly booking forms, real FAQs and checking results."><meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>:root{
+  --bg:#FBFAF7; --paper:#FFFFFF; --ink:#17142B; --ink2:#4A4660; --ink3:#817C95;
+  --line:rgba(23,20,43,.10); --line2:rgba(23,20,43,.16);
+  --coral:#FF5A3C; --coral-50:#FFEDE8; --coral-900:#8A230F;
+  --mint:#12B886; --mint-50:#E1F7EF; --mint-900:#075C43;
+  --sun:#FFB800; --sun-50:#FFF4D4; --sun-900:#7A5200;
+  --pink:#FF4FA3; --pink-50:#FFE7F2; --pink-900:#8C1450;
+  --sky:#2F9BFF; --sky-50:#E5F2FF; --sky-900:#0B4A87;
+  --fh:'Figtree',system-ui,sans-serif; --fb:'Figtree',system-ui,sans-serif;
+  --r:22px; --maxw:860px; --gut:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+.sprite{display:none}
+.ic{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.logo{width:1em;height:1em;flex:none;fill:currentColor}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+@media(min-width:720px){:root{--gut:28px}}
+h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.art h2{font-size:clamp(26px,5vw,36px);margin:46px 0 14px}
+.art h3{font-size:clamp(20px,3.6vw,25px);margin:30px 0 10px;letter-spacing:-.02em}
+.art p{margin:14px 0;color:var(--ink2)}
+.art p strong,.art li strong{color:var(--ink);font-weight:700}
+.art ul,.art ol{margin:14px 0 14px 2px;padding-left:22px;color:var(--ink2)}
+.art li{margin:8px 0}
+.art a.inl{color:var(--coral-900);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-color:rgba(138,35,15,.35)}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:6px 12px 6px 8px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.eyebrow .pulse{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(18,184,134,.5);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(18,184,134,0)}100%{box-shadow:0 0 0 0 rgba(18,184,134,0)}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;font-weight:700;font-size:16px;padding:14px 22px;border-radius:999px;background:var(--ink);color:#fff;transition:transform .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(23,20,43,.2)}
+.btn.coral{background:var(--coral)}
+.btn.coral:hover{box-shadow:0 10px 26px rgba(255,90,60,.35)}
+.btn.wa{background:#25D366}
+.btn .ic{font-size:18px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:62px;max-width:1180px;margin:0 auto;padding:0 var(--gut)}
+.brand{display:flex;align-items:center;font-family:var(--fh);font-weight:800;font-size:24px;letter-spacing:-.04em}
+.brand .o{width:.72em;height:.72em;margin:.1em .02em 0;overflow:visible}
+.brand .o circle.ring{fill:none;stroke:var(--ink);stroke-width:3.2}
+.brand .o .e{transform-origin:12px 12px;animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.nav .btn{padding:10px 18px;font-size:15px}
+.nav-links{display:none;gap:26px;font-weight:600;font-size:15px;color:var(--ink2)}
+.nav-links a:hover{color:var(--ink)}
+@media(min-width:900px){.nav-links{display:flex}}
+
+/* header */
+.art-head{padding:30px 0 6px}
+.crumb{font-size:13.5px;color:var(--ink3);font-weight:600;margin-bottom:16px}
+.crumb a:hover{color:var(--ink)}
+.art-head h1{font-size:clamp(32px,6vw,50px);letter-spacing:-.035em;line-height:1.03;margin:12px 0 16px}
+.byline{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;font-size:14px;color:var(--ink3);font-weight:600}
+.byline .dot{width:4px;height:4px;border-radius:50%;background:var(--line2)}
+.lede{font-size:clamp(18px,2.4vw,21px);color:var(--ink2);margin:20px 0 4px;line-height:1.5}
+
+/* short answer */
+.short{background:var(--ink);color:#fff;border-radius:var(--r);padding:24px 24px 26px;margin:26px 0}
+.short .kicker{color:var(--sun)}
+.short p{color:rgba(255,255,255,.86);margin:10px 0 0;font-size:17px}
+.short p b{color:#fff}
+
+/* cta block */
+.ctaband{background:linear-gradient(135deg,#FFEDE6,#FFF3EA 55%,#FFF8E6);border:1px solid var(--line);border-radius:var(--r);padding:24px;margin:26px 0}
+.ctaband h3{font-size:22px;margin:0 0 6px}
+.ctaband p{margin:0 0 14px;color:var(--ink2)}
+.ctaband ul{margin:0 0 16px;padding:0;list-style:none;display:grid;gap:8px}
+.ctaband li{display:flex;gap:9px;align-items:flex-start;color:var(--ink);font-weight:600;font-size:15.5px}
+.ctaband li .ic{color:var(--mint);margin-top:3px;stroke-width:3}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
+
+/* key insights */
+.insights{border:1px solid var(--line);background:var(--paper);border-radius:var(--r);padding:22px 24px;margin:26px 0}
+.insights .kicker{display:flex;align-items:center;gap:8px;color:var(--coral-900)}
+.insights ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.insights li{display:flex;gap:11px;align-items:flex-start;font-size:15.5px;color:var(--ink2)}
+.insights li .n{flex:none;width:24px;height:24px;border-radius:7px;background:var(--coral-50);color:var(--coral-900);display:grid;place-items:center;font-size:13px;font-weight:800;font-family:var(--fh);margin-top:1px}
+.insights li b{color:var(--ink)}
+
+/* toc */
+.toc{border:1px solid var(--line);border-radius:var(--r);padding:20px 24px;margin:26px 0;background:var(--paper)}
+.toc .kicker{margin-bottom:10px}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:t;columns:2;column-gap:28px}
+@media(max-width:620px){.toc ol{columns:1}}
+.toc li{counter-increment:t;margin:7px 0;font-size:15px;font-weight:600;break-inside:avoid}
+.toc li a{color:var(--ink2);display:flex;gap:9px}
+.toc li a:hover{color:var(--coral-900)}
+.toc li a::before{content:counter(t,decimal-leading-zero);color:var(--ink3);font-variant-numeric:tabular-nums;font-weight:800;font-size:12.5px;margin-top:1px}
+
+/* stat row */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}
+@media(max-width:620px){.stats{grid-template-columns:1fr}}
+.stat{border-radius:16px;padding:18px;background:var(--paper);border:1px solid var(--line)}
+.stat b{font-family:var(--fh);font-size:34px;letter-spacing:-.04em;line-height:1;display:block}
+.stat.c b{color:var(--coral-900)} .stat.m b{color:var(--mint-900)} .stat.s b{color:var(--sun-900)}
+.stat span{display:block;margin-top:8px;font-size:14px;color:var(--ink2);font-weight:500;line-height:1.35}
+
+/* assistant chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-weight:700;font-size:14px}
+.chip .logo{font-size:16px}
+
+/* numbered step */
+.step{display:flex;gap:14px;align-items:flex-start;margin:30px 0 6px}
+.step .sn{flex:none;width:40px;height:40px;border-radius:12px;background:var(--coral);color:#fff;display:grid;place-items:center;font-family:var(--fh);font-weight:800;font-size:17px}
+.step h3{margin:4px 0 0}
+
+/* callout */
+.note{border:1px solid var(--line);border-left:4px solid var(--sky);background:var(--sky-50);border-radius:12px;padding:15px 18px;margin:18px 0;font-size:15.5px;color:var(--ink2)}
+.note b{color:var(--ink)}
+.note.warn{border-left-color:var(--coral);background:var(--coral-50)}
+
+/* table */
+.tw{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:520px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--paper);font-weight:800;color:var(--ink);font-family:var(--fh);font-size:13px}
+tr:last-child td{border-bottom:0}
+td b{color:var(--ink)}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line);padding:2px 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:15px 0;font-weight:700;font-size:17px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--fh);font-size:25px;color:var(--coral);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 15px;color:var(--ink2);font-size:16px}
+
+/* lead form */
+.leadsec{background:var(--ink);color:#fff;border-radius:30px;padding:30px 22px;margin:34px 0}
+@media(min-width:720px){.leadsec{padding:40px 40px}}
+.leadsec h2{color:#fff;margin:8px 0 10px;font-size:clamp(26px,4.4vw,34px)}
+.leadsec p{color:rgba(255,255,255,.74);margin:0 0 18px;max-width:560px}
+.leadsec .kicker{color:rgba(255,255,255,.55)}
+.lead-box{display:flex;flex-direction:column;gap:10px;background:var(--paper);padding:10px;border-radius:24px}
+.lead-box label{display:flex;flex-direction:column;gap:2px;padding:6px 12px 4px;flex:1}
+.lead-box small{font-size:12px;font-weight:700;color:var(--ink3)}
+.lead-box input{border:0;outline:0;background:transparent;font-size:17px;padding:4px 0;width:100%;color:var(--ink)}
+.lead-box input::placeholder{color:#A9A4BA}
+@media(min-width:560px){.lead-box{flex-direction:row;align-items:center;border-radius:999px;padding:8px 8px 8px 14px}.lead-box label{padding:4px 8px}}
+.lead-micro{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:14px;color:rgba(255,255,255,.8);font-weight:500}
+.lead-micro span{display:inline-flex;align-items:center;gap:6px}
+.lead-micro .ic{color:var(--mint);stroke-width:3}
+
+/* related */
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
+@media(max-width:620px){.rel{grid-template-columns:1fr}}
+.rel a{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--paper);transition:transform .2s,box-shadow .2s}
+.rel a:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(23,20,43,.1)}
+.rel a .k{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.rel a b{display:block;font-family:var(--fh);font-size:17px;margin-top:6px;letter-spacing:-.02em}
+.rel a span{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:14px;font-weight:700;color:var(--coral-900)}
+
+.refs{margin:22px 0}
+.refs ol{font-size:14px;color:var(--ink3);padding-left:20px}
+.refs li{margin:6px 0}
+.refs a{color:var(--ink2);text-decoration:underline;text-underline-offset:2px}
+
+footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid var(--line);margin-top:30px}
+.foot{display:flex;flex-direction:column;gap:14px}
+@media(min-width:720px){.foot{flex-direction:row;justify-content:space-between;align-items:center}}
+.foot nav{display:flex;flex-wrap:wrap;gap:18px;font-weight:600}
+.foot nav a:hover{color:var(--ink)}
+.disc{font-size:12.5px;color:var(--ink3);margin-top:10px;line-height:1.5}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+/* ===== graphics: diagram cards, bar charts, mock answers (reference-density) ===== */
+.diagram{border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;margin:24px 0;text-align:center;background:var(--sky-50)}
+.diagram.coral{background:var(--coral-50)} .diagram.mint{background:var(--mint-50)} .diagram.sun{background:var(--sun-50)} .diagram.paper{background:var(--paper)}
+.dg-top{display:inline-block;background:var(--ink);color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--fh);font-weight:800;font-size:17px;letter-spacing:-.02em}
+.dg-top small{display:block;font-weight:600;font-size:12.5px;color:rgba(255,255,255,.72);margin-top:3px;letter-spacing:0}
+.dg-line{width:2px;height:22px;background:var(--line2);margin:8px auto 0}
+.dg-rule{height:2px;background:var(--line2);border-radius:2px;width:72%;margin:0 auto 16px;position:relative}
+.dg-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:460px;margin:0 auto}
+@media(max-width:520px){.dg-grid{grid-template-columns:1fr}}
+.dg-node{background:var(--paper);border:1px solid var(--line2);border-radius:12px;padding:13px 12px;font-weight:700;font-size:15px;color:var(--ink)}
+.dg-node small{display:block;font-weight:500;font-size:12.5px;color:var(--ink3);margin-top:3px}
+.dg-node .ic{color:var(--coral);font-size:17px;margin-bottom:4px}
+.dg-cap{margin:16px auto 0;font-size:14.5px;color:var(--ink);font-weight:700;max-width:520px}
+.dg-cap span{display:block;font-weight:500;color:var(--ink2);font-size:13.5px;margin-top:3px}
+
+.chart{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:24px 0;background:var(--paper)}
+.chart .ct{font-family:var(--fh);font-weight:800;font-size:17px;letter-spacing:-.02em}
+.chart .cs{font-size:13.5px;color:var(--ink3);margin:3px 0 16px}
+.bars{display:grid;gap:11px}
+.bar{display:grid;grid-template-columns:130px 1fr 52px;align-items:center;gap:12px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+@media(max-width:520px){.bar{grid-template-columns:104px 1fr 44px;gap:8px;font-size:12.5px}}
+.bar .track{height:14px;border-radius:999px;background:var(--bg)}
+.bar .fill{height:14px;border-radius:999px;background:var(--c,var(--coral))}
+.bar b{text-align:right;font-family:var(--fh);color:var(--ink);font-variant-numeric:tabular-nums}
+.chart .src{font-size:12px;color:var(--ink3);margin-top:15px}
+.chart .src a{text-decoration:underline;text-underline-offset:2px}
+
+.mockq{border:1px solid var(--line);border-radius:18px;padding:18px;background:var(--paper);box-shadow:0 18px 44px rgba(23,20,43,.08);margin:24px 0;max-width:540px}
+.mockq .mh{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--ink3);margin-bottom:12px}
+.mockq .mh .logo{font-size:17px;color:var(--ink)}
+.mq-user{background:var(--bg);border-radius:14px;padding:11px 14px;font-weight:600;font-size:14.5px;color:var(--ink);margin-bottom:12px}
+.mq-ans{font-size:14.5px;color:var(--ink2);line-height:1.55;margin:0}
+.mq-ans b{color:var(--ink)}
+.mq-pick{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:12px;background:var(--mint-50);color:var(--mint-900);font-weight:700;font-size:14px;margin-top:12px}
+.mq-pick .ic{stroke-width:3}
+.figcap{font-size:13px;color:var(--ink3);text-align:center;margin:-8px 0 20px}
+</style></head><body>
+<header class="nav"><div class="nav-in">
+<a href="index.html" class="brand" aria-label="Latomic home">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic</a>
+<nav class="nav-links" aria-label="Main"><a href="index.html">Guides</a><a href="#plan">Check your agency</a><a href="#faq">FAQ</a></nav>
+<a href="#plan" class="btn">Get a free growth plan</a></div></header>
+<main class="wrap art">
+  <div class="art-head">
+    <div class="crumb"><a href="index.html">Latomic</a> · Guides · AI search for travel agencies</div>
+    <span class="eyebrow"><span class="pulse"></span>AI search · updated 2026</span>
+    <h1>7 ways to make your travel website visible to AI</h1>
+    <div class="byline"><span>By Latomic</span><span class="dot"></span><span>10 min read</span><span class="dot"></span><span>For travel agencies &amp; tour operators</span></div>
+    <p class="lede">ChatGPT, Gemini, Perplexity and Google's AI answers can only recommend what they can read. This is a plain checklist for making your agency's website easy for assistants to crawl, quote and trust.</p>
+  </div>
+
+  <div class="short">
+    <div class="kicker">Short answer</div>
+    <p>Let the AI search crawlers in, put your facts in <b>plain page text</b> (not locked in images or scripts), make your booking and contact forms work without a human, publish real FAQ answers, keep your details consistent, and check what the assistants say. Do those and you're visible to every major AI, not one.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat m"><b>900M</b><span>weekly ChatGPT users (Feb 2026)</span></div>
+    <div class="stat c"><b>56%</b><span>of travelers used AI for a trip in the past year</span></div>
+    <div class="stat s"><b>18%</b><span>of Google searches already show an AI summary</span></div>
+  </div>
+  <p class="figcap">Sources: <a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch</a>; <a href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>; <a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew Research</a> (March 2025).</p>
+
+  <nav class="toc" aria-label="On this page">
+    <div class="kicker">On this page</div>
+    <ol>
+      <li><a href="#crawlers">1. Let the right AI crawlers in</a></li>
+      <li><a href="#facts">2. Put the facts in plain page text</a></li>
+      <li><a href="#schema">3. Add schema, with realistic expectations</a></li>
+      <li><a href="#forms">4. Make booking forms agent-friendly</a></li>
+      <li><a href="#faqs">5. Publish real FAQ answers</a></li>
+      <li><a href="#mentions">6. Stay consistent and earn mentions</a></li>
+      <li><a href="#check">7. Check whether AI mentions you</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+
+  <p>AI assistants send only a trickle of direct traffic today, but that traffic is concentrated, and it's where travelers now form their shortlist. Among AI chatbot referrals, ChatGPT dominates:</p>
+  <div class="chart">
+    <div class="ct">Which AI assistant sends the referrals</div>
+    <div class="cs">Share of AI-chatbot website referrals</div>
+    <div class="bars">
+      <div class="bar"><span><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg> ChatGPT</span><div class="track"><div class="fill" style="--w:80.5%;--c:var(--ink)"></div></div><b>80.5%</b></div>
+      <div class="bar"><span>Other chatbots</span><div class="track"><div class="fill" style="--w:11.9%;--c:var(--sky)"></div></div><b>11.9%</b></div>
+      <div class="bar"><span><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.3977 7.0896h-2.3106V.0676l-7.5094 6.3542V.1577h-1.1554v6.1966L4.4904 0v7.0896H1.6023v10.3976h2.8882V24l6.932-6.3591v6.2005h1.1554v-6.0469l6.9318 6.1807v-6.4879h2.8882V7.0896zm-3.4657-4.531v4.531h-5.355l5.355-4.531zm-13.2862.0676 4.8691 4.4634H5.6458V2.6262zM2.7576 16.332V8.245h7.8476l-6.1149 6.1147v1.9723H2.7576zm2.8882 5.0404v-3.8852h.0001v-2.6488l5.7763-5.7764v7.0111l-5.7764 5.2993zm12.7086.0248-5.7766-5.1509V9.0618l5.7766 5.7766v6.5588zm2.8882-5.0652h-1.733v-1.9723L13.3948 8.245h7.8478v8.087z"/></svg> Perplexity</span><div class="track"><div class="fill" style="--w:5.9%;--c:var(--coral)"></div></div><b>5.9%</b></div>
+      <div class="bar"><span>Copilot</span><div class="track"><div class="fill" style="--w:1.8%;--c:var(--mint)"></div></div><b>1.8%</b></div>
+    </div>
+    <div class="src">Source: <a href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter, AI chatbot market share</a>. ChatGPT is where most AI visibility is won.</div>
+  </div>
+
+  <h2 id="crawlers">1. Let the right AI crawlers in</h2>
+  <p>Each assistant uses its own crawler, and a search crawler is what decides whether you can appear in answers. If your site blocks them, you're invisible before you start. Check your <code>robots.txt</code> and your firewall or CDN bot rules, and allow the search crawlers through.</p>
+  <div class="diagram coral">
+    <div class="dg-top">Allow the AI search crawlers<small>then everything else can work</small></div>
+    <div class="dg-line"></div><div class="dg-rule"></div>
+    <div class="dg-grid">
+      <div class="dg-node"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.872zm16.5963 3.8558L13.1038 8.364 15.1192 7.2a.0757.0757 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.407-.667zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813zm1.0976-2.3654l2.602-1.4998 2.6069 1.4998v2.9994l-2.5974 1.4997-2.6067-1.4997Z"/></svg>OAI-SearchBot<small>ChatGPT search</small></div>
+      <div class="dg-node"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.3977 7.0896h-2.3106V.0676l-7.5094 6.3542V.1577h-1.1554v6.1966L4.4904 0v7.0896H1.6023v10.3976h2.8882V24l6.932-6.3591v6.2005h1.1554v-6.0469l6.9318 6.1807v-6.4879h2.8882V7.0896zm-3.4657-4.531v4.531h-5.355l5.355-4.531zm-13.2862.0676 4.8691 4.4634H5.6458V2.6262zM2.7576 16.332V8.245h7.8476l-6.1149 6.1147v1.9723H2.7576zm2.8882 5.0404v-3.8852h.0001v-2.6488l5.7763-5.7764v7.0111l-5.7764 5.2993zm12.7086.0248-5.7766-5.1509V9.0618l5.7766 5.7766v6.5588zm2.8882-5.0652h-1.733v-1.9723L13.3948 8.245h7.8478v8.087z"/></svg>PerplexityBot<small>Perplexity</small></div>
+      <div class="dg-node"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>Google-Extended<small>Gemini &amp; AI answers</small></div>
+      <div class="dg-node"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /> </svg>Firewall / CDN<small>stop it blocking bots</small></div>
+    </div>
+    <div class="dg-cap">Blocked crawlers can't quote you<span>Check robots.txt and bot-management settings</span></div>
+  </div>
+
+  <h2 id="facts">2. Put the facts in plain page text</h2>
+  <p>Assistants read text, not pictures. If your destinations, trip types, prices, departure points and contact details only live inside images, a slider or a script, they may be invisible. Write the important facts as real, selectable text on the page. A traveler asking "who runs 7-day Morocco tours from Marrakech" is matched to the agency whose page says exactly that in words.</p>
+
+  <h2 id="schema">3. Add schema, with realistic expectations</h2>
+  <p>Structured data (schema) helps machines understand your pages, and it's worth adding for Google. Just don't expect it to be the thing that wins ChatGPT; clear page text matters more. Mark up your organisation, trips and FAQs, then focus your energy on the writing.</p>
+
+  <h2 id="forms">4. Make booking and contact forms agent-friendly</h2>
+  <p>As assistants start to act for travelers, a form only a human can fight through is a dead end. Keep yours simple and readable.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Do this</th><th>Quick test</th></tr></thead>
+      <tbody>
+        <tr><td>Real buttons and links, not image-only</td><td>Can you tab to them with a keyboard?</td></tr>
+        <tr><td>Labelled fields (name, email, dates)</td><td>Does each field have visible, plain text?</td></tr>
+        <tr><td>No pop-ups blocking the form</td><td>Can you reach it without closing overlays?</td></tr>
+        <tr><td>Prices and dates as text</td><td>Are they selectable, not baked into an image?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="faqs">5. Publish real FAQ answers</h2>
+  <p>Travelers ask assistants the same questions they'd ask you: visas, best season, what's included, how to pay, cancellation. Answer them plainly on your site, one clear question and answer at a time. Those answers are exactly the kind of text assistants quote.</p>
+
+  <h2 id="mentions">6. Stay consistent and earn real mentions</h2>
+  <p>Keep your name, phone, address and category identical everywhere, and earn genuine mentions on travel directories, review sites and press. Consistency tells the assistant which facts to trust; reputable mentions tell it you're real.</p>
+
+  <h2 id="check">7. Check whether AI mentions you</h2>
+  <p>Ask ChatGPT, Gemini and Perplexity the questions your travelers would, note whether you're named and what they cite, and track it monthly. You can't improve what you never look at.</p>
+
+  <div class="ctaband">
+    <h3>Want your site built to be read by AI?</h3>
+    <p>Latomic builds and tunes travel agency websites so ChatGPT, Gemini and Google can read, quote and recommend them, and reports what they say each month.</p>
+    <ul>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Crawlable site with your facts in plain text and real FAQs</li>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Agent-friendly booking and contact forms</li>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>One team, everything included, $100 a month</li>
+    </ul>
+    <div class="cta-row">
+      <a href="#plan" class="btn coral">Get my free growth plan <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></a>
+      <a href="https://wa.me/" class="btn wa"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ask on WhatsApp</a>
+    </div>
+  </div>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <details open><summary>How do I get my travel agency recommended by ChatGPT?</summary><p>Be readable, consistent and well-reviewed. There's a full guide on <a class="inl" href="get-your-travel-agency-recommended-by-chatgpt.html">getting recommended by ChatGPT</a>, but it starts with the crawler and plain-text steps here.</p></details>
+    <details><summary>How can I check whether ChatGPT mentions my agency?</summary><p>Ask it the questions your travelers ask, note if you're named and what it cites, and repeat monthly. Run each prompt several times, since answers vary.</p></details>
+    <details><summary>How do I get cited by Perplexity?</summary><p>The same groundwork applies: allow PerplexityBot, publish clear text, and earn reputable mentions. Perplexity leans heavily on sources it can cite.</p></details>
+    <details><summary>Does my website appear in Google's AI answers?</summary><p>It can. Google's AI summaries draw on the open web, so being crawlable and clearly written helps there too. Note that AI summaries reduce link clicks, which is why being named in the summary matters.</p></details>
+    <details><summary>Which AI assistants should a travel agency optimise for?</summary><p>Start with ChatGPT, since it sends most AI referrals, then Google's AI answers and Perplexity. The work overlaps, so you're mostly doing it once.</p></details>
+  </div>
+
+  <h2>More guides for travel agencies</h2>
+  <div class="rel">
+    <a href="get-your-travel-agency-recommended-by-chatgpt.html"><span class="k">Guide</span><b>How to get recommended by ChatGPT</b><span>Read <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span></a>
+    <a href="why-isnt-my-travel-agency-showing-up-in-chatgpt.html"><span class="k">Guide</span><b>Why isn't my agency showing up?</b><span>Read <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span></a>
+    <a href="chatgpt-vs-google-business-profile-travel-agencies.html"><span class="k">Guide</span><b>ChatGPT vs Google Business Profile</b><span>Read <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span></a>
+    <a href="chatgpt-business-profile-for-travel-agencies.html"><span class="k">Guide</span><b>ChatGPT Business Profile for agencies</b><span>Read <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span></a>
+  </div>
+
+  <div class="refs">
+    <div class="kicker">References</div>
+    <ol>
+      <li><a href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter — AI chatbot market share</a></li>
+      <li><a href="https://gs.statcounter.com/search-vs-social-vs-ai-chatbot-market-share">Statcounter — search vs social vs AI chatbot referrals</a></li>
+      <li><a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch — ChatGPT weekly active users</a></li>
+      <li><a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew Research — AI summaries and clicks</a></li>
+    </ol>
+    <p class="disc">Crawler names and behaviour change. Verify current guidance against the sources above and each platform's docs.</p>
+  </div>
+</main>
+<section class="leadsec" id="plan"><div class="kicker">Free growth plan</div>
+<h2>See how ChatGPT describes your agency today</h2>
+<p>Drop your website, Instagram or Google profile and we will send back what the assistants say about you now, and the three things that would move you up.</p>
+<form class="lead-box" onsubmit="return false"><label><small>Your website, Instagram or Google profile</small><input name="website" type="text" inputmode="url" placeholder="youragency.com" aria-label="Your website, Instagram or Google profile"></label>
+<button type="submit" class="btn coral">Get my free growth plan <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></button></form>
+<div class="lead-micro"><span><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Free plan in 24 hours</span><span><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Everything included</span><span><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>No contract</span></div></section>
+<footer><div class="wrap foot">
+<div class="brand" style="font-size:20px">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true" style="width:.72em;height:.72em;margin:.1em .02em 0"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic · the growth team for travel agencies</div>
+<nav><a href="index.html">Guides</a><a href="#plan">Get started</a><a href="https://wa.me/">WhatsApp</a></nav></div>
+<div class="wrap"><p class="disc">Latomic helps travel agencies and tour operators get found by customers across Google, ChatGPT and other AI assistants. Guides are informational and reflect platform behaviour that changes often; verify against the linked sources. Not affiliated with OpenAI.</p></div></footer>
+</body></html>

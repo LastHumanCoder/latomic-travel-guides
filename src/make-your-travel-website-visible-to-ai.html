@@ -1,0 +1,139 @@
+<!--
+title: 7 Ways to Make Your Travel Agency Website Visible to AI (ChatGPT, Gemini, Perplexity)
+desc: A 2026 guide for travel agencies on making your website readable and citable by AI assistants: crawler access, plain-text facts, agent-friendly booking forms, real FAQs and checking results.
+kind: Guide
+card: 7 ways to make your travel website visible to AI
+-->
+<main class="wrap art">
+  <div class="art-head">
+    <div class="crumb"><a href="index.html">Latomic</a> · Guides · AI search for travel agencies</div>
+    <span class="eyebrow"><span class="pulse"></span>AI search · updated 2026</span>
+    <h1>7 ways to make your travel website visible to AI</h1>
+    <div class="byline"><span>By Latomic</span><span class="dot"></span><span>10 min read</span><span class="dot"></span><span>For travel agencies &amp; tour operators</span></div>
+    <p class="lede">ChatGPT, Gemini, Perplexity and Google's AI answers can only recommend what they can read. This is a plain checklist for making your agency's website easy for assistants to crawl, quote and trust.</p>
+  </div>
+
+  <div class="short">
+    <div class="kicker">Short answer</div>
+    <p>Let the AI search crawlers in, put your facts in <b>plain page text</b> (not locked in images or scripts), make your booking and contact forms work without a human, publish real FAQ answers, keep your details consistent, and check what the assistants say. Do those and you're visible to every major AI, not one.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat m"><b>900M</b><span>weekly ChatGPT users (Feb 2026)</span></div>
+    <div class="stat c"><b>56%</b><span>of travelers used AI for a trip in the past year</span></div>
+    <div class="stat s"><b>18%</b><span>of Google searches already show an AI summary</span></div>
+  </div>
+  <p class="figcap">Sources: <a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch</a>; <a href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>; <a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew Research</a> (March 2025).</p>
+
+  <nav class="toc" aria-label="On this page">
+    <div class="kicker">On this page</div>
+    <ol>
+      <li><a href="#crawlers">1. Let the right AI crawlers in</a></li>
+      <li><a href="#facts">2. Put the facts in plain page text</a></li>
+      <li><a href="#schema">3. Add schema, with realistic expectations</a></li>
+      <li><a href="#forms">4. Make booking forms agent-friendly</a></li>
+      <li><a href="#faqs">5. Publish real FAQ answers</a></li>
+      <li><a href="#mentions">6. Stay consistent and earn mentions</a></li>
+      <li><a href="#check">7. Check whether AI mentions you</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ol>
+  </nav>
+
+  <p>AI assistants send only a trickle of direct traffic today, but that traffic is concentrated, and it's where travelers now form their shortlist. Among AI chatbot referrals, ChatGPT dominates:</p>
+  <div class="chart">
+    <div class="ct">Which AI assistant sends the referrals</div>
+    <div class="cs">Share of AI-chatbot website referrals</div>
+    <div class="bars">
+      <div class="bar"><span><i data-logo="openai"></i> ChatGPT</span><div class="track"><div class="fill" style="--w:80.5%;--c:var(--ink)"></div></div><b>80.5%</b></div>
+      <div class="bar"><span>Other chatbots</span><div class="track"><div class="fill" style="--w:11.9%;--c:var(--sky)"></div></div><b>11.9%</b></div>
+      <div class="bar"><span><i data-logo="perplexity"></i> Perplexity</span><div class="track"><div class="fill" style="--w:5.9%;--c:var(--coral)"></div></div><b>5.9%</b></div>
+      <div class="bar"><span>Copilot</span><div class="track"><div class="fill" style="--w:1.8%;--c:var(--mint)"></div></div><b>1.8%</b></div>
+    </div>
+    <div class="src">Source: <a href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter, AI chatbot market share</a>. ChatGPT is where most AI visibility is won.</div>
+  </div>
+
+  <h2 id="crawlers">1. Let the right AI crawlers in</h2>
+  <p>Each assistant uses its own crawler, and a search crawler is what decides whether you can appear in answers. If your site blocks them, you're invisible before you start. Check your <code>robots.txt</code> and your firewall or CDN bot rules, and allow the search crawlers through.</p>
+  <div class="diagram coral">
+    <div class="dg-top">Allow the AI search crawlers<small>then everything else can work</small></div>
+    <div class="dg-line"></div><div class="dg-rule"></div>
+    <div class="dg-grid">
+      <div class="dg-node"><i data-logo="openai"></i>OAI-SearchBot<small>ChatGPT search</small></div>
+      <div class="dg-node"><i data-logo="perplexity"></i>PerplexityBot<small>Perplexity</small></div>
+      <div class="dg-node"><i data-logo="google"></i>Google-Extended<small>Gemini &amp; AI answers</small></div>
+      <div class="dg-node"><i data-i="shield-check"></i>Firewall / CDN<small>stop it blocking bots</small></div>
+    </div>
+    <div class="dg-cap">Blocked crawlers can't quote you<span>Check robots.txt and bot-management settings</span></div>
+  </div>
+
+  <h2 id="facts">2. Put the facts in plain page text</h2>
+  <p>Assistants read text, not pictures. If your destinations, trip types, prices, departure points and contact details only live inside images, a slider or a script, they may be invisible. Write the important facts as real, selectable text on the page. A traveler asking "who runs 7-day Morocco tours from Marrakech" is matched to the agency whose page says exactly that in words.</p>
+
+  <h2 id="schema">3. Add schema, with realistic expectations</h2>
+  <p>Structured data (schema) helps machines understand your pages, and it's worth adding for Google. Just don't expect it to be the thing that wins ChatGPT; clear page text matters more. Mark up your organisation, trips and FAQs, then focus your energy on the writing.</p>
+
+  <h2 id="forms">4. Make booking and contact forms agent-friendly</h2>
+  <p>As assistants start to act for travelers, a form only a human can fight through is a dead end. Keep yours simple and readable.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Do this</th><th>Quick test</th></tr></thead>
+      <tbody>
+        <tr><td>Real buttons and links, not image-only</td><td>Can you tab to them with a keyboard?</td></tr>
+        <tr><td>Labelled fields (name, email, dates)</td><td>Does each field have visible, plain text?</td></tr>
+        <tr><td>No pop-ups blocking the form</td><td>Can you reach it without closing overlays?</td></tr>
+        <tr><td>Prices and dates as text</td><td>Are they selectable, not baked into an image?</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="faqs">5. Publish real FAQ answers</h2>
+  <p>Travelers ask assistants the same questions they'd ask you: visas, best season, what's included, how to pay, cancellation. Answer them plainly on your site, one clear question and answer at a time. Those answers are exactly the kind of text assistants quote.</p>
+
+  <h2 id="mentions">6. Stay consistent and earn real mentions</h2>
+  <p>Keep your name, phone, address and category identical everywhere, and earn genuine mentions on travel directories, review sites and press. Consistency tells the assistant which facts to trust; reputable mentions tell it you're real.</p>
+
+  <h2 id="check">7. Check whether AI mentions you</h2>
+  <p>Ask ChatGPT, Gemini and Perplexity the questions your travelers would, note whether you're named and what they cite, and track it monthly. You can't improve what you never look at.</p>
+
+  <div class="ctaband">
+    <h3>Want your site built to be read by AI?</h3>
+    <p>Latomic builds and tunes travel agency websites so ChatGPT, Gemini and Google can read, quote and recommend them, and reports what they say each month.</p>
+    <ul>
+      <li><i data-i="check"></i>Crawlable site with your facts in plain text and real FAQs</li>
+      <li><i data-i="check"></i>Agent-friendly booking and contact forms</li>
+      <li><i data-i="check"></i>One team, everything included, $100 a month</li>
+    </ul>
+    <div class="cta-row">
+      <a href="#plan" class="btn coral">Get my free growth plan <i data-i="arrow-right"></i></a>
+      <a href="https://wa.me/" class="btn wa"><i data-logo="whatsapp"></i> Ask on WhatsApp</a>
+    </div>
+  </div>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <details open><summary>How do I get my travel agency recommended by ChatGPT?</summary><p>Be readable, consistent and well-reviewed. There's a full guide on <a class="inl" href="get-your-travel-agency-recommended-by-chatgpt.html">getting recommended by ChatGPT</a>, but it starts with the crawler and plain-text steps here.</p></details>
+    <details><summary>How can I check whether ChatGPT mentions my agency?</summary><p>Ask it the questions your travelers ask, note if you're named and what it cites, and repeat monthly. Run each prompt several times, since answers vary.</p></details>
+    <details><summary>How do I get cited by Perplexity?</summary><p>The same groundwork applies: allow PerplexityBot, publish clear text, and earn reputable mentions. Perplexity leans heavily on sources it can cite.</p></details>
+    <details><summary>Does my website appear in Google's AI answers?</summary><p>It can. Google's AI summaries draw on the open web, so being crawlable and clearly written helps there too. Note that AI summaries reduce link clicks, which is why being named in the summary matters.</p></details>
+    <details><summary>Which AI assistants should a travel agency optimise for?</summary><p>Start with ChatGPT, since it sends most AI referrals, then Google's AI answers and Perplexity. The work overlaps, so you're mostly doing it once.</p></details>
+  </div>
+
+  <h2>More guides for travel agencies</h2>
+  <div class="rel">
+    <a href="get-your-travel-agency-recommended-by-chatgpt.html"><span class="k">Guide</span><b>How to get recommended by ChatGPT</b><span>Read <i data-i="arrow-right"></i></span></a>
+    <a href="why-isnt-my-travel-agency-showing-up-in-chatgpt.html"><span class="k">Guide</span><b>Why isn't my agency showing up?</b><span>Read <i data-i="arrow-right"></i></span></a>
+    <a href="chatgpt-vs-google-business-profile-travel-agencies.html"><span class="k">Guide</span><b>ChatGPT vs Google Business Profile</b><span>Read <i data-i="arrow-right"></i></span></a>
+    <a href="chatgpt-business-profile-for-travel-agencies.html"><span class="k">Guide</span><b>ChatGPT Business Profile for agencies</b><span>Read <i data-i="arrow-right"></i></span></a>
+  </div>
+
+  <div class="refs">
+    <div class="kicker">References</div>
+    <ol>
+      <li><a href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter — AI chatbot market share</a></li>
+      <li><a href="https://gs.statcounter.com/search-vs-social-vs-ai-chatbot-market-share">Statcounter — search vs social vs AI chatbot referrals</a></li>
+      <li><a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch — ChatGPT weekly active users</a></li>
+      <li><a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew Research — AI summaries and clicks</a></li>
+    </ol>
+    <p class="disc">Crawler names and behaviour change. Verify current guidance against the sources above and each platform's docs.</p>
+  </div>
+</main>

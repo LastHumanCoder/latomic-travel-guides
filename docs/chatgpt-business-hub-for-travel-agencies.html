@@ -1,0 +1,327 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChatGPT Business Hub for Travel Agencies: What It Is and What You Can Do · Latomic</title>
+<meta name="description" content="What ChatGPT's Business Hub does for travel agencies, what opens when, what you can edit, how to read the insights, and what it can't do yet.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FBFAF7">
+<meta property="og:title" content="ChatGPT Business Hub for Travel Agencies: What It Is and What You Can Do"><meta property="og:description" content="What ChatGPT's Business Hub does for travel agencies, what opens when, what you can edit, how to read the insights, and what it can't do yet."><meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>:root{
+  --bg:#FBFAF7; --paper:#FFFFFF; --ink:#17142B; --ink2:#4A4660; --ink3:#817C95;
+  --line:rgba(23,20,43,.10); --line2:rgba(23,20,43,.16);
+  --coral:#FF5A3C; --coral-50:#FFEDE8; --coral-900:#8A230F;
+  --mint:#12B886; --mint-50:#E1F7EF; --mint-900:#075C43;
+  --sun:#FFB800; --sun-50:#FFF4D4; --sun-900:#7A5200;
+  --pink:#FF4FA3; --pink-50:#FFE7F2; --pink-900:#8C1450;
+  --sky:#2F9BFF; --sky-50:#E5F2FF; --sky-900:#0B4A87;
+  --fh:'Figtree',system-ui,sans-serif; --fb:'Figtree',system-ui,sans-serif;
+  --r:22px; --maxw:860px; --gut:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img,svg{display:block}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit;color:inherit}
+.sprite{display:none}
+.ic{width:1em;height:1em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.logo{width:1em;height:1em;flex:none;fill:currentColor}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+@media(min-width:720px){:root{--gut:28px}}
+h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.art h2{font-size:clamp(26px,5vw,36px);margin:46px 0 14px}
+.art h3{font-size:clamp(20px,3.6vw,25px);margin:30px 0 10px;letter-spacing:-.02em}
+.art p{margin:14px 0;color:var(--ink2)}
+.art p strong,.art li strong{color:var(--ink);font-weight:700}
+.art ul,.art ol{margin:14px 0 14px 2px;padding-left:22px;color:var(--ink2)}
+.art li{margin:8px 0}
+.art a.inl{color:var(--coral-900);font-weight:600;text-decoration:underline;text-underline-offset:2px;text-decoration-color:rgba(138,35,15,.35)}
+.kicker{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:6px 12px 6px 8px;border-radius:999px;background:var(--paper);border:1px solid var(--line)}
+.eyebrow .pulse{width:8px;height:8px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 0 rgba(18,184,134,.5);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(18,184,134,0)}100%{box-shadow:0 0 0 0 rgba(18,184,134,0)}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;cursor:pointer;font-weight:700;font-size:16px;padding:14px 22px;border-radius:999px;background:var(--ink);color:#fff;transition:transform .2s,box-shadow .2s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(23,20,43,.2)}
+.btn.coral{background:var(--coral)}
+.btn.coral:hover{box-shadow:0 10px 26px rgba(255,90,60,.35)}
+.btn.wa{background:#25D366}
+.btn .ic{font-size:18px}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:62px;max-width:1180px;margin:0 auto;padding:0 var(--gut)}
+.brand{display:flex;align-items:center;font-family:var(--fh);font-weight:800;font-size:24px;letter-spacing:-.04em}
+.brand .o{width:.72em;height:.72em;margin:.1em .02em 0;overflow:visible}
+.brand .o circle.ring{fill:none;stroke:var(--ink);stroke-width:3.2}
+.brand .o .e{transform-origin:12px 12px;animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.nav .btn{padding:10px 18px;font-size:15px}
+.nav-links{display:none;gap:26px;font-weight:600;font-size:15px;color:var(--ink2)}
+.nav-links a:hover{color:var(--ink)}
+@media(min-width:900px){.nav-links{display:flex}}
+
+/* header */
+.art-head{padding:30px 0 6px}
+.crumb{font-size:13.5px;color:var(--ink3);font-weight:600;margin-bottom:16px}
+.crumb a:hover{color:var(--ink)}
+.art-head h1{font-size:clamp(32px,6vw,50px);letter-spacing:-.035em;line-height:1.03;margin:12px 0 16px}
+.byline{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;font-size:14px;color:var(--ink3);font-weight:600}
+.byline .dot{width:4px;height:4px;border-radius:50%;background:var(--line2)}
+.lede{font-size:clamp(18px,2.4vw,21px);color:var(--ink2);margin:20px 0 4px;line-height:1.5}
+
+/* short answer */
+.short{background:var(--ink);color:#fff;border-radius:var(--r);padding:24px 24px 26px;margin:26px 0}
+.short .kicker{color:var(--sun)}
+.short p{color:rgba(255,255,255,.86);margin:10px 0 0;font-size:17px}
+.short p b{color:#fff}
+
+/* cta block */
+.ctaband{background:linear-gradient(135deg,#FFEDE6,#FFF3EA 55%,#FFF8E6);border:1px solid var(--line);border-radius:var(--r);padding:24px;margin:26px 0}
+.ctaband h3{font-size:22px;margin:0 0 6px}
+.ctaband p{margin:0 0 14px;color:var(--ink2)}
+.ctaband ul{margin:0 0 16px;padding:0;list-style:none;display:grid;gap:8px}
+.ctaband li{display:flex;gap:9px;align-items:flex-start;color:var(--ink);font-weight:600;font-size:15.5px}
+.ctaband li .ic{color:var(--mint);margin-top:3px;stroke-width:3}
+.cta-row{display:flex;flex-wrap:wrap;gap:10px}
+
+/* key insights */
+.insights{border:1px solid var(--line);background:var(--paper);border-radius:var(--r);padding:22px 24px;margin:26px 0}
+.insights .kicker{display:flex;align-items:center;gap:8px;color:var(--coral-900)}
+.insights ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:12px}
+.insights li{display:flex;gap:11px;align-items:flex-start;font-size:15.5px;color:var(--ink2)}
+.insights li .n{flex:none;width:24px;height:24px;border-radius:7px;background:var(--coral-50);color:var(--coral-900);display:grid;place-items:center;font-size:13px;font-weight:800;font-family:var(--fh);margin-top:1px}
+.insights li b{color:var(--ink)}
+
+/* toc */
+.toc{border:1px solid var(--line);border-radius:var(--r);padding:20px 24px;margin:26px 0;background:var(--paper)}
+.toc .kicker{margin-bottom:10px}
+.toc ol{margin:0;padding:0;list-style:none;counter-reset:t;columns:2;column-gap:28px}
+@media(max-width:620px){.toc ol{columns:1}}
+.toc li{counter-increment:t;margin:7px 0;font-size:15px;font-weight:600;break-inside:avoid}
+.toc li a{color:var(--ink2);display:flex;gap:9px}
+.toc li a:hover{color:var(--coral-900)}
+.toc li a::before{content:counter(t,decimal-leading-zero);color:var(--ink3);font-variant-numeric:tabular-nums;font-weight:800;font-size:12.5px;margin-top:1px}
+
+/* stat row */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}
+@media(max-width:620px){.stats{grid-template-columns:1fr}}
+.stat{border-radius:16px;padding:18px;background:var(--paper);border:1px solid var(--line)}
+.stat b{font-family:var(--fh);font-size:34px;letter-spacing:-.04em;line-height:1;display:block}
+.stat.c b{color:var(--coral-900)} .stat.m b{color:var(--mint-900)} .stat.s b{color:var(--sun-900)}
+.stat span{display:block;margin-top:8px;font-size:14px;color:var(--ink2);font-weight:500;line-height:1.35}
+
+/* assistant chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:var(--paper);border:1px solid var(--line);font-weight:700;font-size:14px}
+.chip .logo{font-size:16px}
+
+/* numbered step */
+.step{display:flex;gap:14px;align-items:flex-start;margin:30px 0 6px}
+.step .sn{flex:none;width:40px;height:40px;border-radius:12px;background:var(--coral);color:#fff;display:grid;place-items:center;font-family:var(--fh);font-weight:800;font-size:17px}
+.step h3{margin:4px 0 0}
+
+/* callout */
+.note{border:1px solid var(--line);border-left:4px solid var(--sky);background:var(--sky-50);border-radius:12px;padding:15px 18px;margin:18px 0;font-size:15.5px;color:var(--ink2)}
+.note b{color:var(--ink)}
+.note.warn{border-left-color:var(--coral);background:var(--coral-50)}
+
+/* table */
+.tw{overflow-x:auto;margin:20px 0;border:1px solid var(--line);border-radius:14px}
+table{width:100%;border-collapse:collapse;font-size:14.5px;min-width:520px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--paper);font-weight:800;color:var(--ink);font-family:var(--fh);font-size:13px}
+tr:last-child td{border-bottom:0}
+td b{color:var(--ink)}
+
+/* faq */
+.faq details{border-bottom:1px solid var(--line);padding:2px 0}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:15px 0;font-weight:700;font-size:17px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--fh);font-size:25px;color:var(--coral);transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{margin:0 0 15px;color:var(--ink2);font-size:16px}
+
+/* lead form */
+.leadsec{background:var(--ink);color:#fff;border-radius:30px;padding:30px 22px;margin:34px 0}
+@media(min-width:720px){.leadsec{padding:40px 40px}}
+.leadsec h2{color:#fff;margin:8px 0 10px;font-size:clamp(26px,4.4vw,34px)}
+.leadsec p{color:rgba(255,255,255,.74);margin:0 0 18px;max-width:560px}
+.leadsec .kicker{color:rgba(255,255,255,.55)}
+.lead-box{display:flex;flex-direction:column;gap:10px;background:var(--paper);padding:10px;border-radius:24px}
+.lead-box label{display:flex;flex-direction:column;gap:2px;padding:6px 12px 4px;flex:1}
+.lead-box small{font-size:12px;font-weight:700;color:var(--ink3)}
+.lead-box input{border:0;outline:0;background:transparent;font-size:17px;padding:4px 0;width:100%;color:var(--ink)}
+.lead-box input::placeholder{color:#A9A4BA}
+@media(min-width:560px){.lead-box{flex-direction:row;align-items:center;border-radius:999px;padding:8px 8px 8px 14px}.lead-box label{padding:4px 8px}}
+.lead-micro{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font-size:14px;color:rgba(255,255,255,.8);font-weight:500}
+.lead-micro span{display:inline-flex;align-items:center;gap:6px}
+.lead-micro .ic{color:var(--mint);stroke-width:3}
+
+/* related */
+.rel{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
+@media(max-width:620px){.rel{grid-template-columns:1fr}}
+.rel a{border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--paper);transition:transform .2s,box-shadow .2s}
+.rel a:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(23,20,43,.1)}
+.rel a .k{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.rel a b{display:block;font-family:var(--fh);font-size:17px;margin-top:6px;letter-spacing:-.02em}
+.rel a span{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:14px;font-weight:700;color:var(--coral-900)}
+
+.refs{margin:22px 0}
+.refs ol{font-size:14px;color:var(--ink3);padding-left:20px}
+.refs li{margin:6px 0}
+.refs a{color:var(--ink2);text-decoration:underline;text-underline-offset:2px}
+
+footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid var(--line);margin-top:30px}
+.foot{display:flex;flex-direction:column;gap:14px}
+@media(min-width:720px){.foot{flex-direction:row;justify-content:space-between;align-items:center}}
+.foot nav{display:flex;flex-wrap:wrap;gap:18px;font-weight:600}
+.foot nav a:hover{color:var(--ink)}
+.disc{font-size:12.5px;color:var(--ink3);margin-top:10px;line-height:1.5}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+/* ===== graphics: diagram cards, bar charts, mock answers (reference-density) ===== */
+.diagram{border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;margin:24px 0;text-align:center;background:var(--sky-50)}
+.diagram.coral{background:var(--coral-50)} .diagram.mint{background:var(--mint-50)} .diagram.sun{background:var(--sun-50)} .diagram.paper{background:var(--paper)}
+.dg-top{display:inline-block;background:var(--ink);color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--fh);font-weight:800;font-size:17px;letter-spacing:-.02em}
+.dg-top small{display:block;font-weight:600;font-size:12.5px;color:rgba(255,255,255,.72);margin-top:3px;letter-spacing:0}
+.dg-line{width:2px;height:22px;background:var(--line2);margin:8px auto 0}
+.dg-rule{height:2px;background:var(--line2);border-radius:2px;width:72%;margin:0 auto 16px;position:relative}
+.dg-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:460px;margin:0 auto}
+@media(max-width:520px){.dg-grid{grid-template-columns:1fr}}
+.dg-node{background:var(--paper);border:1px solid var(--line2);border-radius:12px;padding:13px 12px;font-weight:700;font-size:15px;color:var(--ink)}
+.dg-node small{display:block;font-weight:500;font-size:12.5px;color:var(--ink3);margin-top:3px}
+.dg-node .ic{color:var(--coral);font-size:17px;margin-bottom:4px}
+.dg-cap{margin:16px auto 0;font-size:14.5px;color:var(--ink);font-weight:700;max-width:520px}
+.dg-cap span{display:block;font-weight:500;color:var(--ink2);font-size:13.5px;margin-top:3px}
+
+.chart{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:24px 0;background:var(--paper)}
+.chart .ct{font-family:var(--fh);font-weight:800;font-size:17px;letter-spacing:-.02em}
+.chart .cs{font-size:13.5px;color:var(--ink3);margin:3px 0 16px}
+.bars{display:grid;gap:11px}
+.bar{display:grid;grid-template-columns:130px 1fr 52px;align-items:center;gap:12px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+@media(max-width:520px){.bar{grid-template-columns:104px 1fr 44px;gap:8px;font-size:12.5px}}
+.bar .track{height:14px;border-radius:999px;background:var(--bg)}
+.bar .fill{height:14px;border-radius:999px;background:var(--c,var(--coral))}
+.bar b{text-align:right;font-family:var(--fh);color:var(--ink);font-variant-numeric:tabular-nums}
+.chart .src{font-size:12px;color:var(--ink3);margin-top:15px}
+.chart .src a{text-decoration:underline;text-underline-offset:2px}
+
+.mockq{border:1px solid var(--line);border-radius:18px;padding:18px;background:var(--paper);box-shadow:0 18px 44px rgba(23,20,43,.08);margin:24px 0;max-width:540px}
+.mockq .mh{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--ink3);margin-bottom:12px}
+.mockq .mh .logo{font-size:17px;color:var(--ink)}
+.mq-user{background:var(--bg);border-radius:14px;padding:11px 14px;font-weight:600;font-size:14.5px;color:var(--ink);margin-bottom:12px}
+.mq-ans{font-size:14.5px;color:var(--ink2);line-height:1.55;margin:0}
+.mq-ans b{color:var(--ink)}
+.mq-pick{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:12px;background:var(--mint-50);color:var(--mint-900);font-weight:700;font-size:14px;margin-top:12px}
+.mq-pick .ic{stroke-width:3}
+.figcap{font-size:13px;color:var(--ink3);text-align:center;margin:-8px 0 20px}
+</style></head><body>
+<header class="nav"><div class="nav-in">
+<a href="index.html" class="brand" aria-label="Latomic home">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic</a>
+<nav class="nav-links" aria-label="Main"><a href="index.html">Guides</a><a href="#plan">Check your agency</a><a href="#faq">FAQ</a></nav>
+<a href="#plan" class="btn">Get a free growth plan</a></div></header>
+<main class="wrap art">
+  <div class="art-head">
+    <div class="crumb"><a href="index.html">Latomic</a> · Guides · AI search for travel agencies</div>
+    <span class="eyebrow"><span class="pulse"></span>AI search · updated 2026</span>
+    <h1>ChatGPT Business Hub for travel agencies</h1>
+    <div class="byline"><span>By Latomic</span><span class="dot"></span><span>7 min read</span><span class="dot"></span><span>For travel agencies &amp; tour operators</span></div>
+    <p class="lede">Business Hub is OpenAI's free dashboard where a travel agency claims its profile, edits its details, and sees how often ChatGPT mentions it. Here's what's inside and what it can and can't do.</p>
+  </div>
+
+  <div class="short">
+    <div class="kicker">Short answer</div>
+    <p>Business Hub is where you <b>claim and manage</b> your agency inside ChatGPT. It opens in stages: first a claim, then an identity check, then a complete profile and insights. It's free at launch. It shows mentions, website clicks and the topics travelers ask about, but it does <b>not</b> let you buy a higher ranking.</p>
+  </div>
+
+  <h2 id="unlock">What opens, and when</h2>
+  <div class="diagram mint">
+    <div class="dg-top">Business Hub opens in stages</div>
+    <div class="dg-line"></div><div class="dg-rule"></div>
+    <div class="dg-grid">
+      <div class="dg-node"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" /> <path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244" /> <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" /> </svg>1. Claim<small>find and claim your agency</small></div>
+      <div class="dg-node"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /> </svg>2. Verify identity<small>Persona check</small></div>
+      <div class="dg-node"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M13 21h8" /> <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" /> </svg>3. Edit profile<small>details, trips, policies</small></div>
+      <div class="dg-node"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M3 3v16a2 2 0 0 0 2 2h16" /> <path d="m19 9-5 5-4-4-3 3" /> </svg>4. Insights<small>mentions &amp; clicks</small></div>
+    </div>
+    <div class="dg-cap">Each stage opens the next<span>You won't see insights until you've claimed and verified</span></div>
+  </div>
+
+  <h2 id="free">Is Business Hub free?</h2>
+  <p>Claiming, managing your profile and viewing insights are free at launch. OpenAI has signalled that some future features could carry a cost, and any ads or sponsored placements are separate from a free listing. For now, a travel agency pays nothing to claim and manage its profile.</p>
+
+  <h2 id="edit">What you can edit</h2>
+  <p>Your name and category, description, logo and cover photo, website, destinations and trip types, and your delivery or booking policies. If you sell fixed packages, you may be able to connect a product feed so prices and availability stay current.</p>
+
+  <h2 id="insights">Reading the insights</h2>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Metric</th><th>What it counts</th><th>What it doesn't tell you</th></tr></thead>
+      <tbody>
+        <tr><td><b>Mentions</b></td><td>How often ChatGPT referenced your agency</td><td>Who asked, or whether they booked</td></tr>
+        <tr><td><b>Website clicks</b></td><td>Clicks from ChatGPT to your site</td><td>What happened after the click</td></tr>
+        <tr><td><b>Discovery topics</b></td><td>The themes travelers ask about near you</td><td>Exact wording of every question</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note"><b>Insights are a rolling window, not a live feed.</b> Pair them with your own site analytics, and use the discovery topics as a to-do list of pages to write next. If "family tours" keeps appearing, that's your next page.</p>
+
+  <h2 id="access">Team and agency access</h2>
+  <p>You can add team members, and give an agency like Latomic access to manage the profile and reporting on your behalf. Agencies with several brands or offices can manage them from the same place.</p>
+
+  <h2 id="cant">What Business Hub can't do</h2>
+  <p>It won't raise your ranking, book travelers, or tell you who asked about you. It's an accuracy-and-insight tool, not a sales channel. The recommendations still come from your website, reviews and listings.</p>
+
+  <div class="ctaband">
+    <h3>Let us run your Business Hub</h3>
+    <p>Latomic claims, completes and monitors your ChatGPT profile, and turns the insights into the pages and reviews that earn recommendations.</p>
+    <ul>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Profile claimed, verified and kept current</li>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Monthly report on mentions, clicks and topics</li>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>One team, everything included, $100 a month</li>
+    </ul>
+    <div class="cta-row">
+      <a href="#plan" class="btn coral">Get my free growth plan <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></a>
+      <a href="https://wa.me/" class="btn wa"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ask on WhatsApp</a>
+    </div>
+  </div>
+
+  <h2 id="faq">Frequently asked questions</h2>
+  <div class="faq">
+    <details open><summary>How do I get into ChatGPT Business Hub?</summary><p>Sign in and open Business Hub from your account, then search for and claim your agency.</p></details>
+    <details><summary>Is Business Hub free?</summary><p>Claiming, managing and insights are free at launch. Some future features may cost; ads are separate.</p></details>
+    <details><summary>Why are my insights empty?</summary><p>Insights appear after you've claimed and verified, and once there's data in the window. A brand-new profile starts blank.</p></details>
+    <details><summary>What counts as a mention?</summary><p>A reference to your agency in a ChatGPT answer. It doesn't tell you who asked or whether they booked.</p></details>
+    <details><summary>Can I give my agency access?</summary><p>Yes. You can add team members or grant an agency access to manage and report.</p></details>
+    <details><summary>How long do edits take to show?</summary><p>There's no fixed time. Give changes a little while, and verify your public profile reflects them.</p></details>
+  </div>
+
+  <h2>More guides for travel agencies</h2>
+  <div class="rel">
+    <a href="how-to-claim-your-travel-agency-in-chatgpt.html"><span class="k">Guide</span><b>How to claim your agency, step by step</b><span>Read <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span></a>
+    <a href="chatgpt-business-agent-for-travel-agencies.html"><span class="k">Guide</span><b>ChatGPT business agents, explained</b><span>Read <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span></a>
+    <a href="chatgpt-business-listing-requirements-travel-agencies.html"><span class="k">Guide</span><b>Business listing requirements</b><span>Read <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span></a>
+    <a href="get-your-travel-agency-recommended-by-chatgpt.html"><span class="k">Guide</span><b>How to get recommended by ChatGPT</b><span>Read <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></span></a>
+  </div>
+
+  <div class="refs">
+    <div class="kicker">References</div>
+    <ol>
+      <li><a href="https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt">OpenAI Help Center — setting up your business on ChatGPT</a></li>
+      <li><a href="https://openai.com/index/introducing-businesses-chatgpt/">OpenAI — introducing businesses in ChatGPT</a></li>
+      <li><a href="https://venturebeat.com/technology/openai-lets-you-claim-your-business-in-chatgpt-and-set-up-a-custom-agentic-ai-customer-sales-rep">VentureBeat — claiming your business in ChatGPT</a></li>
+    </ol>
+    <p class="disc">Features change as Business Hub rolls out. Verify against the sources above.</p>
+  </div>
+</main>
+<section class="leadsec" id="plan"><div class="kicker">Free growth plan</div>
+<h2>See how ChatGPT describes your agency today</h2>
+<p>Drop your website, Instagram or Google profile and we will send back what the assistants say about you now, and the three things that would move you up.</p>
+<form class="lead-box" onsubmit="return false"><label><small>Your website, Instagram or Google profile</small><input name="website" type="text" inputmode="url" placeholder="youragency.com" aria-label="Your website, Instagram or Google profile"></label>
+<button type="submit" class="btn coral">Get my free growth plan <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></button></form>
+<div class="lead-micro"><span><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Free plan in 24 hours</span><span><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Everything included</span><span><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>No contract</span></div></section>
+<footer><div class="wrap foot">
+<div class="brand" style="font-size:20px">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true" style="width:.72em;height:.72em;margin:.1em .02em 0"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic · the growth team for travel agencies</div>
+<nav><a href="index.html">Guides</a><a href="#plan">Get started</a><a href="https://wa.me/">WhatsApp</a></nav></div>
+<div class="wrap"><p class="disc">Latomic helps travel agencies and tour operators get found by customers across Google, ChatGPT and other AI assistants. Guides are informational and reflect platform behaviour that changes often; verify against the linked sources. Not affiliated with OpenAI.</p></div></footer>
+</body></html>
