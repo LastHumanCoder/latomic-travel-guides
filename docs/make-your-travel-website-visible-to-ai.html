@@ -1,10 +1,10 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>7 Ways to Make Your Travel Agency Website Visible to AI (ChatGPT, Gemini, Perplexity) · Latomic</title>
-<meta name="description" content="A 2026 guide for travel agencies on making your website readable and citable by AI assistants: crawler access, plain-text facts, agent-friendly booking forms, real FAQs and checking results.">
+<title>7 Ways to Make Your Travel Agency Website Visible to AI (ChatGPT, Gemini, Perplexity, Muse) · Latomic</title>
+<meta name="description" content="A long, practical 2026 guide for travel agencies and tour operators on making your website readable and citable by AI assistants: crawler access, plain-text facts, schema, agent-friendly booking forms, real FAQs, consistent listings and a monthly check.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#FBFAF7">
-<meta property="og:title" content="7 Ways to Make Your Travel Agency Website Visible to AI (ChatGPT, Gemini, Perplexity)"><meta property="og:description" content="A 2026 guide for travel agencies on making your website readable and citable by AI assistants: crawler access, plain-text facts, agent-friendly booking forms, real FAQs and checking results."><meta property="og:type" content="article">
+<meta property="og:title" content="7 Ways to Make Your Travel Agency Website Visible to AI (ChatGPT, Gemini, Perplexity, Muse)"><meta property="og:description" content="A long, practical 2026 guide for travel agencies and tour operators on making your website readable and citable by AI assistants: crawler access, plain-text facts, schema, agent-friendly booking forms, real FAQs, consistent listings and a monthly check."><meta property="og:type" content="article">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>:root{
@@ -215,35 +215,80 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
 .mq-pick{display:flex;align-items:center;gap:10px;padding:11px 12px;border-radius:12px;background:var(--mint-50);color:var(--mint-900);font-weight:700;font-size:14px;margin-top:12px}
 .mq-pick .ic{stroke-width:3}
 .figcap{font-size:13px;color:var(--ink3);text-align:center;margin:-8px 0 20px}
+
+/* ===== left social share rail (desktop) ===== */
+.share-rail{position:fixed;left:max(16px,calc(50% - 600px));top:50%;transform:translateY(-50%);z-index:40;display:none;flex-direction:column;gap:10px;align-items:center}
+@media(min-width:1140px){.share-rail{display:flex}}
+.sr-label{writing-mode:vertical-rl;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin-bottom:4px}
+.sr-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--paper);border:1px solid var(--line);color:var(--ink);cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,color .2s}
+.sr-btn .logo{width:18px;height:18px}.sr-btn .ic{width:19px;height:19px}
+.sr-btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(23,20,43,.14)}
+.sr-btn.x:hover{background:#000;color:#fff}.sr-btn.li:hover{background:#0A66C2;color:#fff}.sr-btn.fb:hover{background:#1877F2;color:#fff}.sr-btn.wa:hover{background:#25D366;color:#fff}
+.sr-btn.copy.done{background:var(--mint);color:#fff;border-color:var(--mint)}
 </style></head><body>
 <header class="nav"><div class="nav-in">
 <a href="index.html" class="brand" aria-label="Latomic home">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic</a>
 <nav class="nav-links" aria-label="Main"><a href="index.html">Guides</a><a href="#plan">Check your agency</a><a href="#faq">FAQ</a></nav>
 <a href="#plan" class="btn">Get a free growth plan</a></div></header>
+<aside class="share-rail" aria-label="Share this guide">
+<span class="sr-label">Share</span>
+<a class="sr-btn x" data-share="x" href="#" aria-label="Share on X"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a class="sr-btn li" data-share="li" href="#" aria-label="Share on LinkedIn"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+<a class="sr-btn fb" data-share="fb" href="#" aria-label="Share on Facebook"><svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+<a class="sr-btn wa" data-share="wa" href="#" aria-label="Share on WhatsApp"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+<button class="sr-btn copy" data-share="copy" type="button" aria-label="Copy link"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /> <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /> </svg></button>
+</aside>
 <main class="wrap art">
   <div class="art-head">
     <div class="crumb"><a href="index.html">Latomic</a> · Guides · AI search for travel agencies</div>
     <span class="eyebrow"><span class="pulse"></span>AI search · updated 2026</span>
-    <h1>7 ways to make your travel website visible to AI</h1>
-    <div class="byline"><span>By Latomic</span><span class="dot"></span><span>10 min read</span><span class="dot"></span><span>For travel agencies &amp; tour operators</span></div>
-    <p class="lede">ChatGPT, Gemini, Perplexity and Google's AI answers can only recommend what they can read. This is a plain checklist for making your agency's website easy for assistants to crawl, quote and trust.</p>
+    <h1>7 ways to make your travel agency website visible to AI</h1>
+    <div class="byline"><span>By Latomic</span><span class="dot"></span><span>14 min read</span><span class="dot"></span><span>For travel agencies &amp; tour operators</span></div>
+    <p class="lede">ChatGPT, Gemini, Perplexity and Google's AI answers can only recommend an agency they can read. This is a long, practical guide to making your travel website easy for assistants to crawl, quote and trust, so when a traveler asks who to book with, your agency is in the answer.</p>
   </div>
 
   <div class="short">
     <div class="kicker">Short answer</div>
-    <p>Let the AI search crawlers in, put your facts in <b>plain page text</b> (not locked in images or scripts), make your booking and contact forms work without a human, publish real FAQ answers, keep your details consistent, and check what the assistants say. Do those and you're visible to every major AI, not one.</p>
+    <p>Let the AI search crawlers reach your pages, put your facts in <b>plain page text</b> rather than images or scripts, add schema with realistic expectations, make your booking and contact forms work without a human fighting through them, publish genuine FAQ answers, keep your business details identical everywhere, and check what the assistants actually say each month. None of it is a trick. It is the same groundwork that wins Google, aimed at a new kind of reader that summarises instead of linking.</p>
+  </div>
+
+  <div class="ctaband" id="start">
+    <h3>Want your site built to be read by AI?</h3>
+    <p>Latomic builds and tunes travel agency websites so ChatGPT, Gemini and Google can read, quote and recommend them, then reports what they say each month.</p>
+    <ul>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Crawlable site with your trips and facts in plain text</li>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Agent-friendly booking and contact forms, real FAQs, consistent listings</li>
+      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>One team, everything included, $100 a month</li>
+    </ul>
+    <div class="cta-row">
+      <a href="#plan" class="btn coral">Get my free growth plan <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></a>
+      <a href="https://wa.me/" class="btn wa"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ask on WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="insights">
+    <div class="kicker"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /> </svg>Key things to know</div>
+    <ul>
+      <li><span class="n">1</span><span>Trip planning moved to AI early. Phocuswright found <b>56% of travelers used AI for at least one trip</b> in the past year, so being absent from AI answers now costs real bookings. (<a class="inl" href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>)</span></li>
+      <li><span class="n">2</span><span>Direct AI traffic is still small but concentrated: <b>ChatGPT accounts for roughly 80% of AI-chatbot referrals</b>, so most of your AI visibility is won or lost there. (<a class="inl" href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter</a>)</span></li>
+      <li><span class="n">3</span><span>If the search crawler can't reach your pages, nothing else matters. This is the single most common and most missed problem.</span></li>
+      <li><span class="n">4</span><span>Assistants read <b>text</b>, not pictures. Prices and trip details locked in images or scripts are invisible to them.</span></li>
+      <li><span class="n">5</span><span>Consistency beats volume. One mismatched phone number or category can hand the recommendation to a competitor.</span></li>
+      <li><span class="n">6</span><span>Reviews carry heavy weight in travel. <b>TripAdvisor shows up in nearly a third</b> of ChatGPT's business answers in testing. (<a class="inl" href="https://www.steadydemand.com/?p=4927">Steady Demand</a>)</span></li>
+      <li><span class="n">7</span><span>Judge your visibility over a monthly log of real traveler questions, never a single lucky prompt.</span></li>
+    </ul>
   </div>
 
   <div class="stats">
-    <div class="stat m"><b>900M</b><span>weekly ChatGPT users (Feb 2026)</span></div>
-    <div class="stat c"><b>56%</b><span>of travelers used AI for a trip in the past year</span></div>
-    <div class="stat s"><b>18%</b><span>of Google searches already show an AI summary</span></div>
+    <div class="stat m"><b>900M</b><span>weekly ChatGPT users, Feb 2026 (<a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch</a>)</span></div>
+    <div class="stat c"><b>56%</b><span>of travelers used AI for a trip in the past year (<a href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>)</span></div>
+    <div class="stat s"><b>18%</b><span>of Google searches already show an AI summary (<a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew</a>)</span></div>
   </div>
-  <p class="figcap">Sources: <a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch</a>; <a href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>; <a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew Research</a> (March 2025).</p>
 
   <nav class="toc" aria-label="On this page">
     <div class="kicker">On this page</div>
     <ol>
+      <li><a href="#why">Why AI visibility matters for agencies now</a></li>
       <li><a href="#crawlers">1. Let the right AI crawlers in</a></li>
       <li><a href="#facts">2. Put the facts in plain page text</a></li>
       <li><a href="#schema">3. Add schema, with realistic expectations</a></li>
@@ -255,7 +300,11 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
     </ol>
   </nav>
 
-  <p>AI assistants send only a trickle of direct traffic today, but that traffic is concentrated, and it's where travelers now form their shortlist. Among AI chatbot referrals, ChatGPT dominates:</p>
+  <h2 id="why">Why AI visibility matters for agencies now</h2>
+  <p>A few years ago, "being found online" meant ranking on Google and keeping a tidy Google Business Profile. That still matters, but a second front has opened. Travelers now bring whole trips to AI assistants: "plan me ten days in Japan with two kids," "who runs small-group treks in Nepal," "find me a travel agent for a budget honeymoon in Bali." The assistant answers with a short, named shortlist, and for many travelers that shortlist is the entire decision.</p>
+  <p>The scale is real. ChatGPT reached around <a class="inl" href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">900 million weekly users by early 2026</a>, and <a class="inl" href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a> found a majority of travelers now lean on AI somewhere in their planning. On the search side, <a class="inl" href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew Research</a> reported that when Google shows an AI summary, people click the blue links far less often, which means the answer itself, not your tenth-place ranking, is what gets seen.</p>
+  <h3>Small traffic today, large influence</h3>
+  <p>It is worth being honest about direct clicks. Measured as referral traffic, AI assistants still send only a sliver compared with search and social, according to <a class="inl" href="https://gs.statcounter.com/search-vs-social-vs-ai-chatbot-market-share">Statcounter</a>. But that undersells their influence, because an assistant shapes the shortlist before the traveler ever clicks anything. And where those clicks do happen, they cluster: among AI chatbots, <a class="inl" href="https://gs.statcounter.com/ai-chatbot-market-share">ChatGPT dominates referral share</a>, with Perplexity and Copilot trailing.</p>
   <div class="chart">
     <div class="ct">Which AI assistant sends the referrals</div>
     <div class="cs">Share of AI-chatbot website referrals</div>
@@ -265,11 +314,14 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
       <div class="bar"><span><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.3977 7.0896h-2.3106V.0676l-7.5094 6.3542V.1577h-1.1554v6.1966L4.4904 0v7.0896H1.6023v10.3976h2.8882V24l6.932-6.3591v6.2005h1.1554v-6.0469l6.9318 6.1807v-6.4879h2.8882V7.0896zm-3.4657-4.531v4.531h-5.355l5.355-4.531zm-13.2862.0676 4.8691 4.4634H5.6458V2.6262zM2.7576 16.332V8.245h7.8476l-6.1149 6.1147v1.9723H2.7576zm2.8882 5.0404v-3.8852h.0001v-2.6488l5.7763-5.7764v7.0111l-5.7764 5.2993zm12.7086.0248-5.7766-5.1509V9.0618l5.7766 5.7766v6.5588zm2.8882-5.0652h-1.733v-1.9723L13.3948 8.245h7.8478v8.087z"/></svg> Perplexity</span><div class="track"><div class="fill" style="--w:5.9%;--c:var(--coral)"></div></div><b>5.9%</b></div>
       <div class="bar"><span>Copilot</span><div class="track"><div class="fill" style="--w:1.8%;--c:var(--mint)"></div></div><b>1.8%</b></div>
     </div>
-    <div class="src">Source: <a href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter, AI chatbot market share</a>. ChatGPT is where most AI visibility is won.</div>
+    <div class="src">Source: <a href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter, AI chatbot market share</a>. Most AI visibility is won on ChatGPT, which is why our <a class="inl" href="get-your-travel-agency-recommended-by-chatgpt.html">guide to getting recommended by ChatGPT</a> starts there.</div>
   </div>
+  <p>The seven steps below are ordered deliberately. The early ones are plumbing: if they are wrong, the later ones can't help. The later ones are about depth and trust. Work them in order, and if you only have an afternoon, start at the top.</p>
 
   <h2 id="crawlers">1. Let the right AI crawlers in</h2>
-  <p>Each assistant uses its own crawler, and a search crawler is what decides whether you can appear in answers. If your site blocks them, you're invisible before you start. Check your <code>robots.txt</code> and your firewall or CDN bot rules, and allow the search crawlers through.</p>
+  <p>An assistant can only quote a page it is allowed to fetch. Each one runs its own crawler, and the <b>search crawler</b> is the one that governs whether you can appear in answers. Block it, by accident or by an over-eager security setting, and you are invisible before any of the other steps matter.</p>
+  <h3>Which crawlers actually matter</h3>
+  <p>For a travel agency, the ones to allow are the search crawlers behind the assistants travelers use: OpenAI's search crawler for ChatGPT, Google's for Gemini and AI Overviews, and Perplexity's. OpenAI documents its crawlers and how to allow them in its <a class="inl" href="https://platform.openai.com/docs/bots">bots documentation</a>, and it is worth knowing that the <i>search</i> crawler is separate from the <i>training</i> crawler. Blocking the training crawler does not remove you from search; blocking the search crawler does. We cover that distinction in <a class="inl" href="why-isnt-my-travel-agency-showing-up-in-chatgpt.html">why your agency isn't showing up in ChatGPT</a>.</p>
   <div class="diagram coral">
     <div class="dg-top">Allow the AI search crawlers<small>then everything else can work</small></div>
     <div class="dg-line"></div><div class="dg-rule"></div>
@@ -279,59 +331,111 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
       <div class="dg-node"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>Google-Extended<small>Gemini &amp; AI answers</small></div>
       <div class="dg-node"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /> </svg>Firewall / CDN<small>stop it blocking bots</small></div>
     </div>
-    <div class="dg-cap">Blocked crawlers can't quote you<span>Check robots.txt and bot-management settings</span></div>
+    <div class="dg-cap">A blocked crawler can't quote you<span>Check robots.txt and bot-management settings</span></div>
   </div>
+  <h3>Check your robots.txt</h3>
+  <p>Open <code>yoursite.com/robots.txt</code> in a browser. If you see a line disallowing the search crawler, or a blanket <code>Disallow: /</code>, that is your problem. Allow the search crawlers explicitly and keep your real destination and booking pages reachable. This is a two-minute check that saves months of wondering why you never appear.</p>
+  <h3>Watch out for firewalls and security plugins</h3>
+  <p>The quieter culprit is your security layer. Many agency sites sit behind a CDN or a security plugin that blocks unfamiliar bots by default, and some providers have tightened this sharply: <a class="inl" href="https://www.cloudflare.com/press/press-releases/2025/cloudflare-just-changed-how-ai-crawlers-scrape-the-internet-at-large/">Cloudflare now blocks AI crawlers by default on new domains</a>, and it sits in front of a large share of the web per <a class="inl" href="https://w3techs.com/technologies/details/cn-cloudflare">W3Techs</a>. If you use a CDN or a security plugin, check its bot rules and allow the AI search crawlers through.</p>
+  <h3>A quick crawler audit</h3>
+  <p>Once a quarter, confirm three things: your robots.txt allows the search crawlers, your firewall isn't silently blocking them, and your important pages return a normal page to a plain request rather than a challenge screen. If you'd rather not, this audit is part of what Latomic runs for every travel client.</p>
 
   <h2 id="facts">2. Put the facts in plain page text</h2>
-  <p>Assistants read text, not pictures. If your destinations, trip types, prices, departure points and contact details only live inside images, a slider or a script, they may be invisible. Write the important facts as real, selectable text on the page. A traveler asking "who runs 7-day Morocco tours from Marrakech" is matched to the agency whose page says exactly that in words.</p>
+  <p>Assistants read words. If your destinations, trip lengths, prices, departure cities and contact details live only inside a slideshow, a booking widget or an image, they may as well not exist to a machine. The agency that gets named for "7-day Morocco tours from Marrakech" is usually the one whose page says exactly that, in selectable text.</p>
+  <h3>Write a page per destination and trip type</h3>
+  <p>A single "Packages" page that lists everything is hard for an assistant to match to a specific question. A page each for "Family tours of Rajasthan," "Small-group Everest Base Camp treks" or "Kenya honeymoon safaris" gives the assistant a clean, quotable answer to a clean question. This is also what wins Google, so you are doing one job, not two. It is the backbone of our <a class="inl" href="get-your-travel-agency-recommended-by-chatgpt.html">recommended-by-ChatGPT guide</a>.</p>
+  <h3>State prices, or clear ranges</h3>
+  <p>Vague pricing makes an assistant hedge, and a hedge is where you lose the traveler. You don't have to publish a rate card, but a clear "from" range, what's included, and who the trip suits all give the assistant something concrete to repeat. If you connect a feed or booking tool, keep it current; a wrong price costs trust the moment a traveler checks.</p>
+  <h3>Don't bury the facts in images or scripts</h3>
+  <p>Prices baked into a banner image, itineraries trapped inside a PDF, or details that only appear after a script runs are all risks. Put the essentials as real HTML text on the page, and use images to illustrate rather than to carry the facts. The same goes for your contact details, which belong in text on a contact page rather than in a footer graphic alone.</p>
+  <h3>Answer the whole question</h3>
+  <p>Travelers ask assistants complete questions, so write pages that answer them completely: the itinerary, the season, what's included and excluded, group size, difficulty, how to book, and the catchment of cities or airports you serve. A page that answers the whole question is the page that gets quoted.</p>
 
   <h2 id="schema">3. Add schema, with realistic expectations</h2>
-  <p>Structured data (schema) helps machines understand your pages, and it's worth adding for Google. Just don't expect it to be the thing that wins ChatGPT; clear page text matters more. Mark up your organisation, trips and FAQs, then focus your energy on the writing.</p>
+  <p>Structured data (schema markup) is code that tells machines what a page is about: that this is a travel agency, that this is a tour with a price and a duration, that these are frequently asked questions. It is worth adding, mainly because it helps Google understand you and can earn richer search results.</p>
+  <h3>What schema helps with</h3>
+  <p>Mark up your organisation, your trips or products, and your FAQs. It makes your pages easier for search engines to parse, and it rarely hurts. For an agency, <code>TravelAgency</code>, <code>Trip</code>/<code>Product</code> and <code>FAQPage</code> types are the useful ones.</p>
+  <h3>What schema won't do</h3>
+  <p>Don't expect schema to be the thing that wins ChatGPT. Assistants lean far more on plain, readable page text and on third-party signals than on your markup. Treat schema as good housekeeping for Google, then spend your real energy on the writing, the reviews and the consistency below.</p>
 
   <h2 id="forms">4. Make booking and contact forms agent-friendly</h2>
-  <p>As assistants start to act for travelers, a form only a human can fight through is a dead end. Keep yours simple and readable.</p>
+  <p>As assistants begin to act on travelers' behalf, a form that only a determined human can fight through becomes a dead end. You don't need to rebuild your site; you need to remove the traps.</p>
   <div class="tw">
     <table>
-      <thead><tr><th>Do this</th><th>Quick test</th></tr></thead>
+      <thead><tr><th>Do this</th><th>Why it matters</th><th>Quick test</th></tr></thead>
       <tbody>
-        <tr><td>Real buttons and links, not image-only</td><td>Can you tab to them with a keyboard?</td></tr>
-        <tr><td>Labelled fields (name, email, dates)</td><td>Does each field have visible, plain text?</td></tr>
-        <tr><td>No pop-ups blocking the form</td><td>Can you reach it without closing overlays?</td></tr>
-        <tr><td>Prices and dates as text</td><td>Are they selectable, not baked into an image?</td></tr>
+        <tr><td>Real buttons and links</td><td>Image-only buttons can't be read or followed</td><td>Can you tab to them with a keyboard?</td></tr>
+        <tr><td>Labelled fields (name, email, dates)</td><td>Unlabelled fields are ambiguous</td><td>Does each field show plain text?</td></tr>
+        <tr><td>No pop-ups blocking the form</td><td>Overlays trap both bots and people</td><td>Can you reach it without closing overlays?</td></tr>
+        <tr><td>Prices and dates as text</td><td>Text can be quoted; images can't</td><td>Can you select them with your cursor?</td></tr>
+        <tr><td>Stable, simple layout</td><td>Jumpy layouts break automated reads</td><td>Does the page settle quickly?</td></tr>
       </tbody>
     </table>
   </div>
+  <h3>Real buttons and real links</h3>
+  <p>"Enquire now" and "Book this trip" should be genuine links or buttons, not clickable images or script-only widgets. A real link can be read, described and followed; an image can't.</p>
+  <h3>Keep the enquiry path short</h3>
+  <p>Every extra required field is another place a traveler, or an assistant acting for one, gives up. Ask for the minimum: where they want to go, roughly when, and how to reach them. You can gather the rest in the conversation that follows, which is exactly where a human agency wins over a faceless booking engine.</p>
 
   <h2 id="faqs">5. Publish real FAQ answers</h2>
-  <p>Travelers ask assistants the same questions they'd ask you: visas, best season, what's included, how to pay, cancellation. Answer them plainly on your site, one clear question and answer at a time. Those answers are exactly the kind of text assistants quote.</p>
+  <p>Travelers ask assistants the same questions they'd ask you across the counter: visas, the best season, what's included, how deposits work, cancellation terms, how fit you need to be for a trek. Answer them plainly on your site, and you hand the assistants ready-made, quotable text.</p>
+  <h3>The questions travelers actually ask</h3>
+  <p>Mine your own inbox and your Business Hub discovery topics, if you've claimed a profile, for the questions that keep coming up. Our <a class="inl" href="chatgpt-business-hub-for-travel-agencies.html">Business Hub guide</a> explains how to read those topics and turn them into your content list.</p>
+  <h3>One clear question per block</h3>
+  <p>Write each FAQ as a single question and a direct answer, not a wall of marketing. Assistants quote tidy, self-contained answers, and so do readers who are in a hurry. Keep them honest; an answer that oversells is one a review will later contradict.</p>
+  <h3>Keep them current</h3>
+  <p>Visa rules, seasons and prices change. An out-of-date FAQ is worse than none, because it teaches the assistant a wrong fact about you. Review them on a schedule.</p>
 
   <h2 id="mentions">6. Stay consistent and earn real mentions</h2>
-  <p>Keep your name, phone, address and category identical everywhere, and earn genuine mentions on travel directories, review sites and press. Consistency tells the assistant which facts to trust; reputable mentions tell it you're real.</p>
+  <p>Two forces decide a lot of what assistants say about you: whether your facts agree with each other everywhere, and whether other reputable places mention you. Both are within your control.</p>
+  <h3>Keep your NAP consistent</h3>
+  <p>Your name, address and phone (NAP), plus your category and website, should read identically on your site, Google, TripAdvisor and every directory. When they disagree, the assistant can't tell which is right, and that doubt is enough to pass the recommendation to a competitor whose details line up. "Blue Horizon Travel" and "Blue Horizon Holidays Pvt Ltd" look like two businesses to a machine, so pick one wording and hold it. We go deeper on this in <a class="inl" href="chatgpt-vs-google-business-profile-travel-agencies.html">ChatGPT vs Google Business Profile</a>.</p>
+  <h3>Reviews are a travel signal, especially TripAdvisor</h3>
+  <p>Travel is a trust purchase, and assistants know it. In an independent test of 2,880 prompts, <a class="inl" href="https://www.steadydemand.com/?p=4927">Steady Demand</a> found ChatGPT's business answers leaned heavily on review platforms, with Yelp most common and, importantly for travel, TripAdvisor second, while a direct pull from Google was rare.</p>
+  <div class="chart">
+    <div class="ct">Where ChatGPT gets its business answers</div>
+    <div class="cs">Share of ChatGPT business answers citing each source (2,880-prompt test)</div>
+    <div class="bars">
+      <div class="bar"><span><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.6885 15.1415-3.6715.8483c-.3769.0871-.755.183-1.1452.155-.2611-.0188-.5122-.0414-.7606-.213a1.179 1.179 0 0 1-.331-.3594c-.3486-.5519-.3656-1.3661-.3697-2.0004a6.2874 6.2874 0 0 1 .3314-2.0642 1.857 1.857 0 0 1 .1073-.2474 2.3426 2.3426 0 0 1 .1255-.2165 2.4572 2.4572 0 0 1 .1563-.1975 1.1736 1.1736 0 0 1 .399-.2831 1.082 1.082 0 0 1 .4592-.0837c.2355.0016.5139.052.91.1734.0555.0191.1237.0382.1856.0572.3277.1013.7048.2404 1.1499.3987.6863.2404 1.3663.487 2.0463.7397l1.2117.4423c.2217.0807.4363.18.6412.297.174.0984.3273.2298.4512.387a1.217 1.217 0 0 1 .192.4309 1.2205 1.2205 0 0 1-.872 1.4522c-.0468.0151-.0852.0239-.1085.0293l-1.105.2553-.0031-.001zM18.8208 7.565a1.8506 1.8506 0 0 0-.2042-.1754 2.4082 2.4082 0 0 0-.2077-.1394 2.3607 2.3607 0 0 0-.2269-.109 1.1705 1.1705 0 0 0-.482-.0796 1.0862 1.0862 0 0 0-.4498.1263c-.2107.1048-.4388.2732-.742.5551-.042.0417-.0947.0886-.142.133-.2502.2351-.5286.5252-.8599.863a114.6363 114.6363 0 0 0-1.5166 1.5629l-.8962.9293a4.1897 4.1897 0 0 0-.4466.5483 1.541 1.541 0 0 0-.2364.5459 1.2199 1.2199 0 0 0 .0107.4518l.0046.02a1.218 1.218 0 0 0 1.4184.923 1.162 1.162 0 0 0 .1105-.0213l4.7781-1.104c.3766-.087.7587-.1667 1.097-.3631.2269-.1316.4428-.262.5909-.5252a1.1793 1.1793 0 0 0 .1405-.4683c.0733-.6512-.2668-1.3908-.5403-1.963a6.2792 6.2792 0 0 0-1.2001-1.7103zM8.9703.0754a8.6724 8.6724 0 0 0-.83.1564c-.2754.066-.548.1383-.8146.2236-.868.2844-2.0884.8063-2.295 1.8065-.1165.5655.1595 1.1439.3737 1.66.2595.6254.614 1.1889.9373 1.7777.8543 1.5545 1.7245 3.0993 2.5922 4.6457.259.4617.5416 1.0464 1.043 1.2856a1.058 1.058 0 0 0 .1013.0383c.2248.0851.4699.1016.7041.0471a4.3015 4.3015 0 0 0 .0418-.0097 1.2136 1.2136 0 0 0 .5658-.3397 1.1033 1.1033 0 0 0 .079-.0822c.3463-.435.3454-1.0833.3764-1.6134.1042-1.771.2139-3.5423.3009-5.3142.0332-.6712.1055-1.3333.0655-2.0096-.0328-.5579-.0368-1.1984-.3891-1.6563-.6218-.8073-1.9476-.741-2.8523-.6158zm2.084 15.9505a1.1053 1.1053 0 0 0-1.2306-.4145 1.1398 1.1398 0 0 0-.1526.0633 1.4806 1.4806 0 0 0-.2171.1354c-.1992.1475-.3668.3392-.5196.5315-.0386.049-.074.1143-.12.1562l-.7686 1.0573a113.9168 113.9168 0 0 0-1.2913 1.789c-.278.3895-.5184.7184-.7083 1.0094-.036.0547-.0734.116-.1075.1647-.2277.3522-.3566.6092-.4228.8381a1.0945 1.0945 0 0 0-.046.4721c.0211.1655.0768.3246.1635.467.046.0715.0957.1406.1487.207a2.334 2.334 0 0 0 .1754.1825 1.843 1.843 0 0 0 .2108.1732c.5304.369 1.1112.6342 1.722.8391a6.0958 6.0958 0 0 0 1.5716.3004c.091.0046.1821.0025.2728-.006a2.3878 2.3878 0 0 0 .2506-.0351 2.3862 2.3862 0 0 0 .2447-.071 1.1927 1.1927 0 0 0 .4175-.2658c.1127-.113.1994-.249.2541-.3989.0889-.2214.1473-.5026.1857-.92.0034-.0593.0118-.1305.0177-.1958.0304-.3463.0443-.7531.0666-1.2315.0375-.7357.067-1.4681.0903-2.2026 0 0 .0495-1.3053.0494-1.306.0113-.3008.002-.6342-.0814-.9336a1.396 1.396 0 0 0-.1756-.4054zm8.6754 2.0439c-.1605-.176-.3878-.3514-.7462-.5682-.0518-.0288-.1124-.0674-.1684-.1009-.2985-.1795-.658-.3684-1.078-.5965a120.7615 120.7615 0 0 0-1.9427-1.042l-1.1515-.6107c-.0597-.0175-.1203-.0607-.1766-.0878-.2212-.1058-.4558-.2045-.6992-.2498a1.4915 1.4915 0 0 0-.2545-.0265 1.1527 1.1527 0 0 0-.1648.01 1.1077 1.1077 0 0 0-.9227.9133 1.4186 1.4186 0 0 0 .0159.439c.0563.3065.1932.6096.3346.875l.615 1.1526c.3422.65.6884 1.2963 1.0435 1.9406.229.4202.4196.7799.5982 1.078.0338.056.0721.1163.1011.1682.2173.3584.392.584.569.7458.1146.1107.252.195.4026.247.1583.0525.326.071.4919.0546a2.368 2.368 0 0 0 .251-.0435c.0817-.022.1622-.048.241-.0784a1.863 1.863 0 0 0 .2475-.1143 6.1018 6.1018 0 0 0 1.2818-.9597c.4596-.4522.8659-.9454 1.182-1.51.044-.08.0819-.163.1138-.2483a2.49 2.49 0 0 0 .0773-.2411c.0186-.083.033-.1669.0429-.2513a1.188 1.188 0 0 0-.0565-.491 1.0933 1.0933 0 0 0-.248-.4041zm2.86 3.742a.8523.8523 0 0 1-.111.4236c-.074.132-.178.2377-.3115.3172a.8428.8428 0 0 1-.4385.119.847.847 0 0 1-.4373-.1179.8526.8526 0 0 1-.3125-.3171.8548.8548 0 0 1-.111-.4248c0-.1526.038-.2958.1143-.4294a.8405.8405 0 0 1 .315-.3159.849.849 0 0 1 .4315-.1156.8514.8514 0 0 1 .4294.1144.84.84 0 0 1 .316.3148.8494.8494 0 0 1 .1156.4317zm-.1202 0c0-.1328-.0332-.256-.0996-.3698s-.1564-.2038-.2702-.2702a.7125.7125 0 0 0-.371-.1007.7204.7204 0 0 0-.3698.0996.7487.7487 0 0 0-.2713.2702.7181.7181 0 0 0-.0996.3709c0 .132.0332.2557.0996.371a.7355.7355 0 0 0 .2713.2713.7354.7354 0 0 0 .3698.0985.7205.7205 0 0 0 .3698-.0996.7423.7423 0 0 0 .2702-.2691.7186.7186 0 0 0 .1008-.3721zm-.577.0584.2724.4522h-.1922l-.237-.4052h-.1546v.4052h-.1695v-1.02h.2988c.1268 0 .2195.0247.2783.0744.0595.0496.0892.1252.0892.2267a.2785.2785 0 0 1-.0492.1625c-.032.0466-.0775.0813-.1362.1042zm-.0412-.1408a.1532.1532 0 0 0 .056-.1214c0-.0573-.0164-.0981-.0491-.1225-.0329-.0251-.0847-.0377-.1557-.0377h-.1214v.3285h.1237c.061 0 .1098-.0157.1465-.047z"/></svg> Yelp</span><div class="track"><div class="fill" style="--w:95.8%;--c:var(--ink)"></div></div><b>95.8%</b></div>
+      <div class="bar"><span>TripAdvisor</span><div class="track"><div class="fill" style="--w:28.9%;--c:var(--coral)"></div></div><b>28.9%</b></div>
+      <div class="bar"><span>OpenTable</span><div class="track"><div class="fill" style="--w:16.9%;--c:var(--sky)"></div></div><b>16.9%</b></div>
+      <div class="bar"><span><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg> Google</span><div class="track"><div class="fill" style="--w:4.6%;--c:var(--mint)"></div></div><b>4.6%</b></div>
+    </div>
+    <div class="src">Source: <a href="https://www.steadydemand.com/?p=4927">Steady Demand</a>, Aug 2026 (US). Ask every happy traveler for a review while the trip is fresh.</div>
+  </div>
+  <p>Ask for reviews at the right moment, which is right after the trip, and keep them steady rather than chasing a one-off burst. Recent, genuine reviews tend to count for more than an old pile of praise.</p>
+  <h3>Earn mentions on reputable travel sources</h3>
+  <p>Beyond reviews, being named on respected travel directories, association pages and genuine press gives assistants a second kind of proof that you're real and relevant. You don't need dozens; a handful of reputable, topical mentions does more than a long list of thin ones.</p>
 
   <h2 id="check">7. Check whether AI mentions you</h2>
-  <p>Ask ChatGPT, Gemini and Perplexity the questions your travelers would, note whether you're named and what they cite, and track it monthly. You can't improve what you never look at.</p>
-
-  <div class="ctaband">
-    <h3>Want your site built to be read by AI?</h3>
-    <p>Latomic builds and tunes travel agency websites so ChatGPT, Gemini and Google can read, quote and recommend them, and reports what they say each month.</p>
-    <ul>
-      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Crawlable site with your facts in plain text and real FAQs</li>
-      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>Agent-friendly booking and contact forms</li>
-      <li><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg>One team, everything included, $100 a month</li>
-    </ul>
-    <div class="cta-row">
-      <a href="#plan" class="btn coral">Get my free growth plan <svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /> </svg></a>
-      <a href="https://wa.me/" class="btn wa"><svg class="logo" aria-hidden="true" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg> Ask on WhatsApp</a>
-    </div>
+  <p>You can't improve what you never look at. The habit that separates agencies who climb from agencies who guess is a simple monthly check.</p>
+  <h3>Build a prompt log</h3>
+  <p>Once a month, ask ChatGPT, Gemini and Perplexity the questions your travelers would ask, in their words. Keep a short spreadsheet.</p>
+  <div class="tw">
+    <table>
+      <thead><tr><th>Prompt to try</th><th>What to record</th></tr></thead>
+      <tbody>
+        <tr><td>"Best travel agency for a honeymoon in [destination]"</td><td>Named? Position? Competitors shown?</td></tr>
+        <tr><td>"Who plans family tours to [region]?"</td><td>Sources cited, any wrong details</td></tr>
+        <tr><td>"Tour operator that offers [specialty]"</td><td>Does your niche come through?</td></tr>
+        <tr><td>"Travel agent for a [budget] trip to [country]"</td><td>Whether price framing matches yours</td></tr>
+      </tbody>
+    </table>
   </div>
+  <h3>What to record, and why</h3>
+  <p>For each prompt note whether you were named, your position, which competitors appeared, what sources were cited, and any factual errors. Record the date, the city and whether you were signed in, because answers shift with all three. Run each prompt several times; a single answer is never the pattern.</p>
+  <h3>Track the trend, not the day</h3>
+  <p>Look at the movement across months, not day to day. If "family tours" keeps surfacing as a question and you're never named, that's your next page to write. This monthly loop is the heart of what we do for travel clients, and it feeds straight back into steps one through six.</p>
 
   <h2 id="faq">Frequently asked questions</h2>
   <div class="faq">
-    <details open><summary>How do I get my travel agency recommended by ChatGPT?</summary><p>Be readable, consistent and well-reviewed. There's a full guide on <a class="inl" href="get-your-travel-agency-recommended-by-chatgpt.html">getting recommended by ChatGPT</a>, but it starts with the crawler and plain-text steps here.</p></details>
-    <details><summary>How can I check whether ChatGPT mentions my agency?</summary><p>Ask it the questions your travelers ask, note if you're named and what it cites, and repeat monthly. Run each prompt several times, since answers vary.</p></details>
-    <details><summary>How do I get cited by Perplexity?</summary><p>The same groundwork applies: allow PerplexityBot, publish clear text, and earn reputable mentions. Perplexity leans heavily on sources it can cite.</p></details>
-    <details><summary>Does my website appear in Google's AI answers?</summary><p>It can. Google's AI summaries draw on the open web, so being crawlable and clearly written helps there too. Note that AI summaries reduce link clicks, which is why being named in the summary matters.</p></details>
-    <details><summary>Which AI assistants should a travel agency optimise for?</summary><p>Start with ChatGPT, since it sends most AI referrals, then Google's AI answers and Perplexity. The work overlaps, so you're mostly doing it once.</p></details>
+    <details open><summary>How do I get my travel agency recommended by ChatGPT?</summary><p>Be readable, consistent and well-reviewed. The crawler and plain-text steps here are the start; the full method is in <a class="inl" href="get-your-travel-agency-recommended-by-chatgpt.html">how to get recommended by ChatGPT</a>.</p></details>
+    <details><summary>How can I check whether ChatGPT mentions my agency?</summary><p>Ask it the questions your travelers ask, note whether you're named and what it cites, and repeat monthly. Run each prompt several times, since answers vary by wording, city and sign-in.</p></details>
+    <details><summary>How do I get cited by Perplexity?</summary><p>The same groundwork applies: allow PerplexityBot, publish clear text, and earn reputable mentions. Perplexity leans heavily on sources it can cite, so clear, quotable pages help.</p></details>
+    <details><summary>Does my website appear in Google's AI Overviews?</summary><p>It can. Google's AI answers draw on the open web, so being crawlable and clearly written helps there too. Note that AI summaries reduce link clicks (<a class="inl" href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew</a>), which is exactly why being named in the summary matters.</p></details>
+    <details><summary>How do I make my website visible to Meta's AI?</summary><p>The same principles hold: crawlable pages, plain-text facts, consistent details and real reviews. Allow the relevant crawlers and keep your facts readable, and you're visible across assistants rather than one.</p></details>
+    <details><summary>Which AI assistants should a travel agency optimise for?</summary><p>Start with ChatGPT, since it sends most AI referrals (<a class="inl" href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter</a>), then Google's AI answers and Perplexity. The work overlaps, so you mostly do it once.</p></details>
+    <details><summary>Do I need to claim a ChatGPT profile for this to work?</summary><p>Claiming helps you fix your facts and read mention data, but the visibility work here is separate and comes first. See <a class="inl" href="how-to-claim-your-travel-agency-in-chatgpt.html">how to claim your agency</a> and the <a class="inl" href="chatgpt-business-listing-requirements-travel-agencies.html">listing requirements</a>.</p></details>
   </div>
 
   <h2>More guides for travel agencies</h2>
@@ -347,10 +451,15 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
     <ol>
       <li><a href="https://gs.statcounter.com/ai-chatbot-market-share">Statcounter — AI chatbot market share</a></li>
       <li><a href="https://gs.statcounter.com/search-vs-social-vs-ai-chatbot-market-share">Statcounter — search vs social vs AI chatbot referrals</a></li>
-      <li><a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch — ChatGPT weekly active users</a></li>
-      <li><a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew Research — AI summaries and clicks</a></li>
+      <li><a href="https://techcrunch.com/2026/02/27/chatgpt-reaches-900m-weekly-active-users">TechCrunch — ChatGPT reaches 900M weekly active users</a></li>
+      <li><a href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright — Search slips, AI surges</a></li>
+      <li><a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">Pew Research — AI summaries and link clicks</a></li>
+      <li><a href="https://www.steadydemand.com/?p=4927">Steady Demand — which sources ChatGPT cites for local businesses</a></li>
+      <li><a href="https://platform.openai.com/docs/bots">OpenAI — crawlers and how to allow them</a></li>
+      <li><a href="https://www.cloudflare.com/press/press-releases/2025/cloudflare-just-changed-how-ai-crawlers-scrape-the-internet-at-large/">Cloudflare — AI crawler blocking by default</a></li>
+      <li><a href="https://w3techs.com/technologies/details/cn-cloudflare">W3Techs — Cloudflare usage statistics</a></li>
     </ol>
-    <p class="disc">Crawler names and behaviour change. Verify current guidance against the sources above and each platform's docs.</p>
+    <p class="disc">Crawler names and platform behaviour change often. Verify current guidance against the sources above and each platform's own documentation. Latomic is not affiliated with OpenAI, Google, Perplexity or Meta.</p>
   </div>
 </main>
 <section class="leadsec" id="plan"><div class="kicker">Free growth plan</div>
@@ -363,4 +472,10 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
 <div class="brand" style="font-size:20px">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true" style="width:.72em;height:.72em;margin:.1em .02em 0"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic · the growth team for travel agencies</div>
 <nav><a href="index.html">Guides</a><a href="#plan">Get started</a><a href="https://wa.me/">WhatsApp</a></nav></div>
 <div class="wrap"><p class="disc">Latomic helps travel agencies and tour operators get found by customers across Google, ChatGPT and other AI assistants. Guides are informational and reflect platform behaviour that changes often; verify against the linked sources. Not affiliated with OpenAI.</p></div></footer>
+<script>(function(){var u=encodeURIComponent(location.href),t=encodeURIComponent(document.title);
+var m={x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,li:'https://www.linkedin.com/sharing/share-offsite/?url='+u,
+fb:'https://www.facebook.com/sharer/sharer.php?u='+u,wa:'https://wa.me/?text='+t+'%20'+u};
+document.querySelectorAll('.sr-btn[data-share]').forEach(function(b){var k=b.getAttribute('data-share');
+if(m[k]){b.href=m[k];b.target='_blank';b.rel='noopener';}
+if(k==='copy'){b.addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(location.href);b.classList.add('done');setTimeout(function(){b.classList.remove('done')},1200);});}});})();</script>
 </body></html>
