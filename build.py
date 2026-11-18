@@ -83,6 +83,24 @@ def frontmatter(raw):
 def page(slug, fm, body):
     title = fm.get("title", slug)
     desc = fm.get("desc", "")
+    # doc layout (e.g. the AI-information page): nav + body + footer only,
+    # no social rail, lead form, cover or insights furniture.
+    if fm.get("layout") == "doc":
+        html = f'''<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{title} · Latomic</title>
+<meta name="description" content="{desc}">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FBFAF7">
+<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>{CSS}</style></head><body>
+{NAV}
+{body.strip()}
+{FOOTER}
+</body></html>'''
+        return icons(html)
     # hero cover image under the title, if one exists for this slug
     if (ROOT/"covers"/f"{slug}.webp").exists():
         fig = f'<figure class="cover"><img src="covers/{slug}.webp" alt="" loading="eager" width="1200" height="658"></figure>'
@@ -126,7 +144,7 @@ def build_index():
              "chatgpt-business-hub-for-travel-agencies","chatgpt-business-agent-for-travel-agencies",
              "chatgpt-vs-google-business-profile-travel-agencies",
              "does-chatgpt-recommend-hotels-and-travel-businesses","will-ai-replace-travel-agents",
-             "how-to-get-travel-agency-leads-from-chatgpt-and-ai-search"]
+             "how-to-get-travel-agency-leads-from-chatgpt-and-ai-search","ai-information"]
     by = {s: fm for s, fm in INDEX_CARDS}
     for s in order:
         if s not in by: continue

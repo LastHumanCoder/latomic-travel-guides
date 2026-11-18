@@ -231,3 +231,26 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
 /* rail hides where it would collide with the full-bleed dark CTA / footer */
 .share-rail{transition:opacity .25s,visibility .25s}
 .share-rail.gone{opacity:0;visibility:hidden;pointer-events:none}
+
+/* ===== AI information doc (engine.com/ai-information style) ===== */
+.aidoc{padding-bottom:10px}
+.aidoc .aihead{padding:28px 0 2px}
+.aidoc .aihead h1{font-size:clamp(30px,5.5vw,46px);letter-spacing:-.035em;line-height:1.04;margin:10px 0 14px}
+.lastup{display:flex;flex-wrap:wrap;gap:8px;font-size:13px;font-weight:700;margin:12px 0 0}
+.lastup .tag{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px 12px;color:var(--ink3)}
+.lastup .tag b{color:var(--ink)}
+.glance{border:1px solid var(--line);border-radius:var(--r);background:var(--paper);overflow:hidden;margin:22px 0}
+.glance>div{display:grid;grid-template-columns:210px 1fr;gap:14px;padding:13px 20px;border-bottom:1px solid var(--line);font-size:15px}
+.glance>div:last-child{border-bottom:0}
+.glance dt{color:var(--ink3);font-weight:700;margin:0}
+.glance dd{color:var(--ink);font-weight:600;margin:0}
+@media(max-width:560px){.glance>div{grid-template-columns:1fr;gap:3px;padding:12px 16px}}
+.summ{display:grid;gap:12px;margin:20px 0}
+.summ .s{border:1px solid var(--line);border-left:4px solid var(--coral);border-radius:14px;padding:15px 18px;background:var(--paper)}
+.summ .s .lab{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--coral-900);margin-bottom:6px}
+.summ .s p{margin:0;color:var(--ink2)}
+.todo{background:var(--sun-50);border:1px dashed var(--sun-900);color:var(--sun-900);border-radius:6px;padding:0 7px;font-size:.88em;font-weight:700;white-space:nowrap}
+.aiinstr{border:1px solid var(--line);border-left:4px solid var(--mint);background:var(--mint-50);border-radius:14px;padding:18px 20px;margin:20px 0}
+.aiinstr ul{margin:10px 0 0;padding-left:20px;color:var(--ink2)}
+.aiinstr li{margin:7px 0}
+.aiinstr b{color:var(--ink)}
