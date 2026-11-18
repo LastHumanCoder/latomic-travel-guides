@@ -45,7 +45,11 @@ var m={x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,li:'https://www.li
 fb:'https://www.facebook.com/sharer/sharer.php?u='+u,wa:'https://wa.me/?text='+t+'%20'+u};
 document.querySelectorAll('.sr-btn[data-share]').forEach(function(b){var k=b.getAttribute('data-share');
 if(m[k]){b.href=m[k];b.target='_blank';b.rel='noopener';}
-if(k==='copy'){b.addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(location.href);b.classList.add('done');setTimeout(function(){b.classList.remove('done')},1200);});}});})();</script>'''
+if(k==='copy'){b.addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(location.href);b.classList.add('done');setTimeout(function(){b.classList.remove('done')},1200);});}});
+var rail=document.querySelector('.share-rail');
+if(rail&&'IntersectionObserver' in window){var vis=new Set();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?vis.add(e.target):vis.delete(e.target)});rail.classList.toggle('gone',vis.size>0);},{rootMargin:'-40% 0px -40% 0px'});
+document.querySelectorAll('.leadsec,footer').forEach(function(el){io.observe(el)});}})();</script>'''
 
 LEAD = '''<section class="leadsec" id="plan"><div class="kicker">Free growth plan</div>
 <h2>See how ChatGPT describes your agency today</h2>
@@ -83,13 +87,9 @@ def page(slug, fm, body):
     if (ROOT/"covers"/f"{slug}.webp").exists():
         fig = f'<figure class="cover"><img src="covers/{slug}.webp" alt="" loading="eager" width="1200" height="658"></figure>'
         body = re.sub(r'(class="lede"[^>]*>.*?</p>\s*</div>)', lambda m: m.group(1)+"\n"+fig, body, count=1, flags=re.S)
-    # make the Key insights box collapsible (title visible, bullets behind an Expand toggle)
-    body = re.sub(
-        r'<div class="insights">\s*<div class="kicker">(.*?)</div>\s*(<ul>.*?</ul>)\s*</div>',
-        lambda m: ('<div class="insights"><div class="ins-h">'+m.group(1)+'</div>'
-                   '<details class="ins-d"><summary><span class="s-c">Expand key insights</span>'
-                   '<span class="s-o">Hide key insights</span></summary>'+m.group(2)+'</details></div>'),
-        body, count=1, flags=re.S)
+    # drop the Key insights box entirely (we keep only the Quick answer / .short box)
+    body = re.sub(r'<div class="insights">\s*<div class="kicker">.*?</div>\s*<ul>.*?</ul>\s*</div>',
+                  "", body, count=1, flags=re.S)
     html = f'''<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{title} · Latomic</title>

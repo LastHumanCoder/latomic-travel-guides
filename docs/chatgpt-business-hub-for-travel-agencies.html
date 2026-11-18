@@ -85,14 +85,6 @@ h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.03em;line-hei
 .ctaband li .ic{color:var(--mint);margin-top:3px;stroke-width:3}
 .cta-row{display:flex;flex-wrap:wrap;gap:10px}
 
-/* key insights */
-.insights{border:1px solid var(--line);background:var(--paper);border-radius:var(--r);padding:22px 24px;margin:26px 0}
-.insights .kicker{display:flex;align-items:center;gap:8px;color:var(--coral-900)}
-.insights ul{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:12px}
-.insights li{display:flex;gap:11px;align-items:flex-start;font-size:15.5px;color:var(--ink2)}
-.insights li .n{flex:none;width:24px;height:24px;border-radius:7px;background:var(--coral-50);color:var(--coral-900);display:grid;place-items:center;font-size:13px;font-weight:800;font-family:var(--fh);margin-top:1px}
-.insights li b{color:var(--ink)}
-
 /* toc */
 .toc{border:1px solid var(--line);border-radius:var(--r);padding:20px 24px;margin:26px 0;background:var(--paper)}
 .toc .kicker{margin-bottom:10px}
@@ -104,12 +96,16 @@ h1,h2,h3,h4{font-family:var(--fh);font-weight:800;letter-spacing:-.03em;line-hei
 .toc li a::before{content:counter(t,decimal-leading-zero);color:var(--ink3);font-variant-numeric:tabular-nums;font-weight:800;font-size:12.5px;margin-top:1px}
 
 /* stat row */
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
 @media(max-width:620px){.stats{grid-template-columns:1fr}}
-.stat{border-radius:16px;padding:18px;background:var(--paper);border:1px solid var(--line)}
-.stat b{font-family:var(--fh);font-size:34px;letter-spacing:-.04em;line-height:1;display:block}
+.stat{position:relative;overflow:hidden;border-radius:18px;padding:20px 18px 18px 22px;background:var(--paper);border:1px solid var(--line);box-shadow:0 10px 26px rgba(23,20,43,.05)}
+.stat::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--coral-900)}
+.stat::after{content:"";position:absolute;right:-28px;top:-28px;width:84px;height:84px;border-radius:50%;background:var(--coral-50);opacity:.8}
+.stat.c::before{background:var(--coral)} .stat.m::before{background:var(--mint)} .stat.s::before{background:var(--sun)}
+.stat.m::after{background:var(--mint-50)} .stat.s::after{background:var(--sun-50)}
+.stat b{position:relative;font-family:var(--fh);font-size:38px;letter-spacing:-.04em;line-height:1;display:block}
 .stat.c b{color:var(--coral-900)} .stat.m b{color:var(--mint-900)} .stat.s b{color:var(--sun-900)}
-.stat span{display:block;margin-top:8px;font-size:14px;color:var(--ink2);font-weight:500;line-height:1.35}
+.stat span{position:relative;display:block;margin-top:9px;font-size:14px;color:var(--ink2);font-weight:500;line-height:1.35}
 
 /* assistant chips */
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
@@ -180,30 +176,41 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
 .disc{font-size:12.5px;color:var(--ink3);margin-top:10px;line-height:1.5}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 /* ===== graphics: diagram cards, bar charts, mock answers (reference-density) ===== */
-.diagram{border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;margin:24px 0;text-align:center;background:var(--sky-50)}
-.diagram.coral{background:var(--coral-50)} .diagram.mint{background:var(--mint-50)} .diagram.sun{background:var(--sun-50)} .diagram.paper{background:var(--paper)}
-.dg-top{display:inline-block;background:var(--ink);color:#fff;border-radius:14px;padding:12px 24px;font-family:var(--fh);font-weight:800;font-size:17px;letter-spacing:-.02em}
-.dg-top small{display:block;font-weight:600;font-size:12.5px;color:rgba(255,255,255,.72);margin-top:3px;letter-spacing:0}
-.dg-line{width:2px;height:22px;background:var(--line2);margin:8px auto 0}
-.dg-rule{height:2px;background:var(--line2);border-radius:2px;width:72%;margin:0 auto 16px;position:relative}
-.dg-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:460px;margin:0 auto}
+.diagram{border:1px solid var(--line);border-radius:var(--r);padding:30px 24px;margin:24px 0;text-align:center;background:radial-gradient(130% 92% at 50% 0,var(--sky-50),var(--paper) 72%);box-shadow:0 14px 40px rgba(23,20,43,.06)}
+.diagram.coral{background:radial-gradient(130% 92% at 50% 0,var(--coral-50),var(--paper) 72%)}
+.diagram.mint{background:radial-gradient(130% 92% at 50% 0,var(--mint-50),var(--paper) 72%)}
+.diagram.sun{background:radial-gradient(130% 92% at 50% 0,var(--sun-50),var(--paper) 72%)}
+.diagram.paper{background:var(--paper)}
+.dg-top{display:inline-block;background:linear-gradient(135deg,var(--ink),#2C2750);color:#fff;border-radius:16px;padding:14px 26px;font-family:var(--fh);font-weight:800;font-size:17.5px;letter-spacing:-.02em;box-shadow:0 16px 32px rgba(23,20,43,.24)}
+.dg-top small{display:block;font-weight:600;font-size:12.5px;color:rgba(255,255,255,.74);margin-top:3px;letter-spacing:0}
+.dg-line{width:2px;height:26px;background:linear-gradient(var(--line2),rgba(23,20,43,.04));margin:10px auto 0}
+.dg-rule{height:2px;background:var(--line2);border-radius:2px;width:70%;margin:0 auto 18px;position:relative}
+.dg-rule::before,.dg-rule::after{content:"";position:absolute;top:50%;width:8px;height:8px;border-radius:50%;background:var(--line2);transform:translateY(-50%)}
+.dg-rule::before{left:0}.dg-rule::after{right:0}
+.dg-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:480px;margin:0 auto}
 @media(max-width:520px){.dg-grid{grid-template-columns:1fr}}
-.dg-node{background:var(--paper);border:1px solid var(--line2);border-radius:12px;padding:13px 12px;font-weight:700;font-size:15px;color:var(--ink)}
-.dg-node small{display:block;font-weight:500;font-size:12.5px;color:var(--ink3);margin-top:3px}
-.dg-node .ic{color:var(--coral);font-size:17px;margin-bottom:4px}
-.dg-cap{margin:16px auto 0;font-size:14.5px;color:var(--ink);font-weight:700;max-width:520px}
+.dg-node{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 15px;font-weight:700;font-size:15px;color:var(--ink);text-align:left;box-shadow:0 8px 20px rgba(23,20,43,.06);transition:transform .2s,box-shadow .2s}
+.dg-node:hover{transform:translateY(-3px);box-shadow:0 16px 32px rgba(23,20,43,.12)}
+.dg-node small{display:block;font-weight:500;font-size:12.5px;color:var(--ink3);margin-top:2px}
+.dg-node .ic{width:40px;height:40px;padding:9px;border-radius:12px;color:#fff;background:var(--coral);stroke-width:2.4;margin-bottom:10px}
+.dg-node:nth-child(1) .ic{background:var(--coral)} .dg-node:nth-child(2) .ic{background:var(--sky)}
+.dg-node:nth-child(3) .ic{background:var(--mint)} .dg-node:nth-child(4) .ic{background:var(--pink)}
+.dg-cap{margin:18px auto 0;font-size:14.5px;color:var(--ink);font-weight:700;max-width:520px}
 .dg-cap span{display:block;font-weight:500;color:var(--ink2);font-size:13.5px;margin-top:3px}
 
-.chart{border:1px solid var(--line);border-radius:var(--r);padding:20px 22px;margin:24px 0;background:var(--paper)}
-.chart .ct{font-family:var(--fh);font-weight:800;font-size:17px;letter-spacing:-.02em}
-.chart .cs{font-size:13.5px;color:var(--ink3);margin:3px 0 16px}
-.bars{display:grid;gap:11px}
-.bar{display:grid;grid-template-columns:130px 1fr 52px;align-items:center;gap:12px;font-size:13.5px;font-weight:600;color:var(--ink2)}
-@media(max-width:520px){.bar{grid-template-columns:104px 1fr 44px;gap:8px;font-size:12.5px}}
-.bar .track{height:14px;border-radius:999px;background:var(--bg)}
-.bar .fill{height:14px;border-radius:999px;background:var(--c,var(--coral))}
-.bar b{text-align:right;font-family:var(--fh);color:var(--ink);font-variant-numeric:tabular-nums}
-.chart .src{font-size:12px;color:var(--ink3);margin-top:15px}
+.chart{border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;margin:24px 0;background:linear-gradient(180deg,var(--paper),var(--bg));box-shadow:0 14px 40px rgba(23,20,43,.06)}
+.chart .ct{font-family:var(--fh);font-weight:800;font-size:18px;letter-spacing:-.02em}
+.chart .cs{font-size:13.5px;color:var(--ink3);margin:4px 0 18px}
+.bars{display:grid;gap:14px}
+.bar{display:grid;grid-template-columns:132px 1fr auto;align-items:center;gap:12px;font-size:13.5px;font-weight:600;color:var(--ink2)}
+@media(max-width:520px){.bar{grid-template-columns:96px 1fr auto;gap:8px;font-size:12.5px}}
+.bar>span{display:flex;align-items:center;gap:7px}
+.bar>span .logo{font-size:16px}
+.bar .track{height:20px;border-radius:999px;background:rgba(23,20,43,.06);box-shadow:inset 0 1px 2px rgba(23,20,43,.07);overflow:hidden}
+.bar .fill{width:var(--w);height:100%;border-radius:999px;background:linear-gradient(90deg,var(--c,var(--coral)),color-mix(in srgb,var(--c,var(--coral)) 60%,#fff));box-shadow:0 2px 9px color-mix(in srgb,var(--c,var(--coral)) 38%,transparent);animation:grow 1.1s cubic-bezier(.22,1,.36,1) both}
+@keyframes grow{from{width:0}}
+.bar b{font-family:var(--fh);font-weight:800;color:var(--ink);font-variant-numeric:tabular-nums;font-size:15px;min-width:50px;text-align:right}
+.chart .src{font-size:12px;color:var(--ink3);margin-top:16px}
 .chart .src a{text-decoration:underline;text-underline-offset:2px}
 
 .mockq{border:1px solid var(--line);border-radius:18px;padding:18px;background:var(--paper);box-shadow:0 18px 44px rgba(23,20,43,.08);margin:24px 0;max-width:540px}
@@ -230,17 +237,9 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
 .cover{margin:22px 0 6px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);box-shadow:0 20px 50px rgba(23,20,43,.10);background:var(--paper)}
 .cover img{width:100%;height:auto;display:block}
 
-/* ===== collapsible key insights ===== */
-.insights .ins-h{display:flex;align-items:center;gap:9px;font-family:var(--fh);font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--ink);margin:0 0 14px}
-.insights .ins-h .ic{color:var(--coral);font-size:20px}
-.ins-d summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;padding:14px 18px;border:1.5px solid var(--line2);border-radius:14px;font-weight:700;font-size:16px;color:var(--ink);transition:border-color .2s,background .2s}
-.ins-d summary:hover{border-color:var(--coral);background:var(--coral-50)}
-.ins-d summary::-webkit-details-marker{display:none}
-.ins-d summary::before{content:"\25B6";font-size:11px;color:var(--coral);transition:transform .25s}
-.ins-d[open] summary::before{transform:rotate(90deg)}
-.ins-d[open] summary{margin-bottom:8px}
-.ins-d .s-o{display:none}
-.ins-d[open] .s-c{display:none}.ins-d[open] .s-o{display:inline}
+/* rail hides where it would collide with the full-bleed dark CTA / footer */
+.share-rail{transition:opacity .25s,visibility .25s}
+.share-rail.gone{opacity:0;visibility:hidden;pointer-events:none}
 </style></head><body>
 <header class="nav"><div class="nav-in">
 <a href="index.html" class="brand" aria-label="Latomic home">lat<svg class="o" viewBox="0 0 24 24" aria-hidden="true"><circle class="ring" cx="12" cy="12" r="9.4"/><g class="e"><circle cx="12" cy="1.6" r="3.2" fill="#FF5A3C"/></g></svg>mic</a>
@@ -265,7 +264,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
 <figure class="cover"><img src="covers/chatgpt-business-hub-for-travel-agencies.webp" alt="" loading="eager" width="1200" height="658"></figure>
 
   <div class="short">
-    <div class="kicker">Short answer</div>
+    <div class="kicker">Quick answer</div>
     <p>Business Hub is where you <b>claim and manage</b> your agency inside ChatGPT. It opens in stages: first a claim, then an identity check, then a full profile, then insights. It is <b>free at launch</b>. It shows mentions, website clicks and the topics travelers ask about, over a rolling <b>28-day window</b>. It does <b>not</b> let you buy a higher ranking, take bookings, or tell you who asked. The recommendations still come from your website, reviews and listings.</p>
   </div>
 
@@ -283,15 +282,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
     </div>
   </div>
 
-  <div class="insights"><div class="ins-h"><svg class="ic" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z" /> <path d="M20 2v4" /> <path d="M22 4h-4" /> <circle cx="4" cy="20" r="2" /> </svg>Key things to know</div><details class="ins-d"><summary><span class="s-c">Expand key insights</span><span class="s-o">Hide key insights</span></summary><ul>
-      <li><span class="n">1</span><span>Business Hub puts your agency in front of a very large audience. OpenAI launched it to reach <b>around 1.2 billion weekly ChatGPT users</b>, which is why claiming your profile is worth an afternoon. (<a class="inl" href="https://www.unite.ai/openai-launches-business-hub-and-business-agents-in-chatgpt/">Unite.ai</a>)</span></li>
-      <li><span class="n">2</span><span>It is <b>free at launch</b>. OpenAI has signalled that some features could carry a cost later, and any paid placement would be separate from the free listing. (<a class="inl" href="https://venturebeat.com/technology/openai-lets-you-claim-your-business-in-chatgpt-and-set-up-a-custom-agentic-ai-customer-sales-rep">VentureBeat</a>)</span></li>
-      <li><span class="n">3</span><span>Insights run on a <b>rolling 28-day window</b>, not a live feed, so read trends across months rather than reacting to a single day. (<a class="inl" href="https://help.openai.com/en/articles/20001635-setting-up-your-business-on-chatgpt">OpenAI Help</a>)</span></li>
-      <li><span class="n">4</span><span>Travelers already plan with AI. Phocuswright found <b>56% of travelers used AI for at least one trip</b> in the past year, so the audience behind these mentions is real. (<a class="inl" href="https://www.phocuswright.com/Travel-Research/Research-Updates/2025/search-slips-ai-surges">Phocuswright</a>)</span></li>
-      <li><span class="n">5</span><span>Local recommendation habits have moved fast. <b>45% of US consumers used AI to find a local business</b> in 2026, up from 6% a year earlier. (<a class="inl" href="https://www.brightlocal.com/research/local-consumer-review-survey/">BrightLocal</a>)</span></li>
-      <li><span class="n">6</span><span>Business Hub is an accuracy and insight tool, not a lever. It will not raise your ranking or take a booking, and it won't tell you who asked about you. (<a class="inl" href="https://openai.com/index/introducing-businesses-chatgpt/">OpenAI</a>)</span></li>
-      <li><span class="n">7</span><span>What actually earns the mention sits outside the Hub: reviews carry heavy weight, and in one 2,880-prompt test <b>TripAdvisor appeared in 28.9%</b> of ChatGPT's business answers. (<a class="inl" href="https://www.steadydemand.com/?p=4927">Steady Demand</a>)</span></li>
-    </ul></details></div>
+  
 
   <div class="stats">
     <div class="stat m"><b>1.2B</b><span>weekly ChatGPT users Business Hub reaches (<a href="https://www.unite.ai/openai-launches-business-hub-and-business-agents-in-chatgpt/">Unite.ai</a>)</span></div>
@@ -422,7 +413,7 @@ footer{padding:30px 0 60px;color:var(--ink3);font-size:14px;border-top:1px solid
   <h3>No bookings, and no who-asked</h3>
   <p>The Hub will not take a payment or confirm a trip, and it will not tell you who asked about you. Mentions and clicks are counts, not contacts: you learn that interest happened, not whose it was, which fits how OpenAI describes the feature as a way to meet businesses rather than a booking system (<a class="inl" href="https://openai.com/index/introducing-businesses-chatgpt/">OpenAI</a>). The booking still happens on your site or in the conversation that a traveler starts with you, which is why your <a class="inl" href="make-your-travel-website-visible-to-ai.html">website and enquiry forms</a> have to carry that last step.</p>
   <h3>Where recommendations really come from</h3>
-  <p>The signals that actually decide your mentions sit outside the Hub, in your website text, your listings and your reviews. Travel is a trust purchase, and assistants lean on review platforms heavily: in an independent test of 2,880 prompts, <a class="inl" href="https://www.steadydemand.com/?p=4927">Steady Demand</a> found ChatGPT's business answers drew on review sites far more than a direct pull from Google, with TripAdvisor prominent for travel.</p>
+  <p>The signals that decide your mentions sit outside the Hub, in your website text, your listings and your reviews. Travel is a trust purchase, and assistants lean on review platforms heavily: in an independent test of 2,880 prompts, <a class="inl" href="https://www.steadydemand.com/?p=4927">Steady Demand</a> found ChatGPT's business answers drew on review sites far more than a direct pull from Google, with TripAdvisor prominent for travel.</p>
   <div class="chart">
     <div class="ct">Where ChatGPT gets its business answers</div>
     <div class="cs">Share of ChatGPT business answers citing each source (2,880-prompt test)</div>
@@ -485,5 +476,9 @@ var m={x:'https://twitter.com/intent/tweet?url='+u+'&text='+t,li:'https://www.li
 fb:'https://www.facebook.com/sharer/sharer.php?u='+u,wa:'https://wa.me/?text='+t+'%20'+u};
 document.querySelectorAll('.sr-btn[data-share]').forEach(function(b){var k=b.getAttribute('data-share');
 if(m[k]){b.href=m[k];b.target='_blank';b.rel='noopener';}
-if(k==='copy'){b.addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(location.href);b.classList.add('done');setTimeout(function(){b.classList.remove('done')},1200);});}});})();</script>
+if(k==='copy'){b.addEventListener('click',function(){navigator.clipboard&&navigator.clipboard.writeText(location.href);b.classList.add('done');setTimeout(function(){b.classList.remove('done')},1200);});}});
+var rail=document.querySelector('.share-rail');
+if(rail&&'IntersectionObserver' in window){var vis=new Set();
+var io=new IntersectionObserver(function(es){es.forEach(function(e){e.isIntersecting?vis.add(e.target):vis.delete(e.target)});rail.classList.toggle('gone',vis.size>0);},{rootMargin:'-40% 0px -40% 0px'});
+document.querySelectorAll('.leadsec,footer').forEach(function(el){io.observe(el)});}})();</script>
 </body></html>
